@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>readme.md</title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+html,footer,header{
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Custom MD PDF CSS
+ */
+html,footer,header{
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+
+ }
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+<link rel="stylesheet" href="file:///r%3A/2.Travail/1.Enseignement/Cours/_1.Outils/2.Developpement/1.SCSS/main.css" type="text/css"><link rel="stylesheet" href="file:///d%3A/rdaros/Cours/_1.Outils/2.Developpement/1.SCSS/main.css" type="text/css">
+</head>
+
+<body>
+    <h1 id="autonomous-generative-ai-agent-for-presentation-creation">Autonomous Generative AI Agent for Presentation Creation</h1>
+<h2 id="%F0%9F%93%8C-project-overview">📌 Project Overview</h2>
+<p>This project is an <strong>Autonomous Generative AI Agent</strong> designed to automatically create professional presentations from minimal user input. The system leverages <strong>Generative AI</strong>, <strong>FastAPI</strong>, and <strong>Google Authentication</strong> to provide a secure, scalable, and intelligent solution for presentation creation.</p>
+<p>Users can sign up, log in (including via <strong>Google OAuth</strong>), submit a topic or prompt, and receive a structured, AI-generated presentation outline or content.</p>
+<hr>
+<h2 id="%F0%9F%9A%80-key-features">🚀 Key Features</h2>
+<ul>
+<li>
+<p>🔐 <strong>Authentication System</strong></p>
+<ul>
+<li>Email &amp; Password Signup/Login</li>
+<li>Google OAuth 2.0 Login (ID Token based)</li>
+</ul>
+</li>
+<li>
+<p>🤖 <strong>Generative AI Agent</strong></p>
+<ul>
+<li>Converts prompts into structured presentation content</li>
+<li>Slide-wise logical flow</li>
+</ul>
+</li>
+<li>
+<p>⚡ <strong>FastAPI Backend</strong></p>
+<ul>
+<li>High performance REST APIs</li>
+<li>Automatic API documentation with Swagger</li>
+</ul>
+</li>
+<li>
+<p>🗄️ <strong>Database Integration</strong></p>
+<ul>
+<li>User management</li>
+<li>Secure token handling</li>
+</ul>
+</li>
+<li>
+<p>🧪 <strong>Token Validation Utilities</strong></p>
+<ul>
+<li>Google ID token verification</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="%F0%9F%8F%97%EF%B8%8F-tech-stack">🏗️ Tech Stack</h2>
+<h3 id="backend">Backend</h3>
+<ul>
+<li><strong>Python 3.10+</strong></li>
+<li><strong>FastAPI</strong></li>
+<li><strong>SQLAlchemy</strong></li>
+<li><strong>OAuth 2.0 (Google Authentication)</strong></li>
+<li><strong>JWT</strong></li>
+</ul>
+<h3 id="ai">AI</h3>
+<ul>
+<li><strong>Generative AI / LLMs</strong> (OpenAI / compatible models)</li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>Postman / cURL for API testing</li>
+<li>Git &amp; GitHub for version control</li>
+</ul>
+<hr>
+<h2 id="%F0%9F%93%82-project-structure">📂 Project Structure</h2>
+<pre class="hljs"><code><div>backend/
+│── auth/
+│   ├── routes.py        # Auth routes (signup, login, google-login)
+│   ├── schemas.py       # Pydantic models
+│   ├── service.py       # Business logic
+│   ├── gAuth.py         # Google token verification
+│
+│── utils/
+│   ├── dependencies.py # DB dependencies
+│
+│── main.py              # FastAPI app entry point
+│── test.py              # Google ID token validation script
+│── requirements.txt
+</div></code></pre>
+<hr>
+<h2 id="%F0%9F%94%90-authentication-flow">🔐 Authentication Flow</h2>
+<h3 id="1%EF%B8%8F%E2%83%A3-emailpassword-authentication">1️⃣ Email/Password Authentication</h3>
+<ul>
+<li><code>/auth/signup</code></li>
+<li><code>/auth/login</code></li>
+</ul>
+<h3 id="2%EF%B8%8F%E2%83%A3-google-oauth-authentication">2️⃣ Google OAuth Authentication</h3>
+<ol>
+<li>
+<p>User logs in via Google</p>
+</li>
+<li>
+<p>Frontend obtains <strong>Google ID Token</strong></p>
+</li>
+<li>
+<p>ID Token is sent to backend <code>/auth/google-login</code></p>
+</li>
+<li>
+<p>Backend:</p>
+<ul>
+<li>Verifies token audience &amp; issuer</li>
+<li>Extracts user email</li>
+<li>Creates or logs in user</li>
+<li>Returns application JWT token</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="%F0%9F%A7%AA-testing-google-login-backend-only">🧪 Testing Google Login (Backend Only)</h2>
+<p>You can test Google ID token validity using:</p>
+<pre class="hljs"><code><div>python test.py
+</div></code></pre>
+<p>The script:</p>
+<ul>
+<li>Accepts Google ID Token</li>
+<li>Validates audience, issuer &amp; expiry</li>
+<li>Confirms whether the token is valid</li>
+</ul>
+<hr>
+<h2 id="%F0%9F%9B%A0%EF%B8%8F-setup-instructions">🛠️ Setup Instructions</h2>
+<h3 id="1%EF%B8%8F%E2%83%A3-clone-the-repository">1️⃣ Clone the Repository</h3>
+<pre class="hljs"><code><div>git <span class="hljs-built_in">clone</span> https://github.com/your-username/autonomous-ai-presentation-agent.git
+<span class="hljs-built_in">cd</span> autonomous-ai-presentation-agent/backend
+</div></code></pre>
+<h3 id="2%EF%B8%8F%E2%83%A3-create-virtual-environment">2️⃣ Create Virtual Environment</h3>
+<pre class="hljs"><code><div>python -m venv genAI_env
+genAI_env\Scripts\activate  <span class="hljs-comment"># Windows</span>
+</div></code></pre>
+<h3 id="3%EF%B8%8F%E2%83%A3-install-dependencies">3️⃣ Install Dependencies</h3>
+<pre class="hljs"><code><div>pip install -r requirements.txt
+</div></code></pre>
+<h3 id="4%EF%B8%8F%E2%83%A3-configure-environment-variables">4️⃣ Configure Environment Variables</h3>
+<p>Create a <code>.env</code> file:</p>
+<pre class="hljs"><code><div>GOOGLE_CLIENT_ID=your_client_id.apps.googleusercontent.com
+GOOGLE_CLIENT_SECRET=your_client_secret
+JWT_SECRET=your_jwt_secret
+</div></code></pre>
+<hr>
+<h2 id="%E2%96%B6%EF%B8%8F-run-the-application">▶️ Run the Application</h2>
+<pre class="hljs"><code><div>uvicorn main:app --reload
+</div></code></pre>
+<p>API Docs available at:</p>
+<ul>
+<li>Swagger UI: <code>http://127.0.0.1:8000/docs</code></li>
+<li>OpenAPI JSON: <code>http://127.0.0.1:8000/openapi.json</code></li>
+</ul>
+<hr>
+<h2 id="%F0%9F%93%8C-example-api-call-google-login">📌 Example API Call (Google Login)</h2>
+<pre class="hljs"><code><div>curl -X POST http://127.0.0.1:8000/auth/google-login \
+-H <span class="hljs-string">"Content-Type: application/json"</span> \
+-d <span class="hljs-string">'{"google_token": "&lt;GOOGLE_ID_TOKEN&gt;"}'</span>
+</div></code></pre>
+<hr>
+<h2 id="%F0%9F%94%AE-future-enhancements">🔮 Future Enhancements</h2>
+<ul>
+<li>Frontend integration (React / Next.js)</li>
+<li>PPT/PDF auto-generation</li>
+<li>Multi-language presentation support</li>
+<li>Presentation templates</li>
+<li>Voice-based prompt input</li>
+</ul>
+<hr>
+<h2 id="%F0%9F%91%A8%E2%80%8D%F0%9F%92%BB-author">👨‍💻 Author</h2>
+<p><strong>Suyash Bhavalkar</strong></p>
+<hr>
+<h2 id="%E2%AD%90-contribution">⭐ Contribution</h2>
+<p>Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.</p>
+<hr>
+<h2 id="%F0%9F%93%9C-license">📜 License</h2>
+<p>This project is licensed under the MIT License.</p>
+
+</body>
+
+</html>
