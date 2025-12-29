@@ -1,22 +1,26 @@
 from fastapi import FastAPI
+from agents.planner.routes import router as planner_router
+from agents.executor.routes import router as executor_router
 
-from core.config import JWT_SECRET_KEY
-
-from utils.database import Base, engine
-
-from auth.routes import router as auth_router
+# If you have auth middleware, import it here
+# from auth.dependencies import get_current_user
 
 app = FastAPI(
-    title="Autonomous Generative AI Agent",
-    version="1.0.0"
+    title="Autonomous PPT Generation API",
+    description="Planner + Executor multi-agent system",
+    version="1.0.0",
 )
 
-# Create DB tables
-Base.metadata.create_all(bind=engine)
+# Include routers
+app.include_router(planner_router)
+app.include_router(executor_router)
 
-# Register routers
-app.include_router(auth_router)
-
+# Optional: root endpoint
 @app.get("/")
+def root():
+    return {"message": "Welcome to the Autonomous PPT Generation API"}
+
+# Optional: health check
+@app.get("/health")
 def health_check():
     return {"status": "ok"}
