@@ -1,70 +1,67 @@
 # executor_agent.py
-from .research_agent import research_agent
-from .content_agent import content_agent
-from .image_agent import image_agent
-from .slide_agent import slide_agent
+from typing import Dict, Set
 
-from ..planner.schemas import ExecutionPlan, PlanStep
-
-AGENT_FUNCTIONS = {
-    "research_agent": research_agent,
-    "content_agent": content_agent,
-    "image_agent": image_agent,
-    "slide_agent": slide_agent,
-}
+from ..planner.schemas import GraphSpec, NodeSpec
+from ..registry import AGENT_REGISTRY
 
 
-class ExecutorAgent:
-    """Modular executor that runs plan steps using the goal from ExecutionPlan."""
+class GraphExecutor:
+    """
+    LangGraph-style DAG executor.
+    """
 
     def __init__(self):
-        self.context = {}  # Store outputs of previous steps keyed by step id
+        self.state: Dict[str, any] = {}
+        self.completed_nodes: Set[str] = set()
 
-    async def execute_plan(self, plan: ExecutionPlan) -> dict:
-        """Execute the given plan sequentially using plan.goal.
-
-        Returns a mapping {step_id: result}.
+    async def execute(self, graph: GraphSpec) -> Dict[str, any]:
         """
-        results = {}
-        for step in plan.steps:
-            result = await self._execute_step(step, plan.goal)
-            results[step.step_id] = result
-            self.context[f"step_{step.step_id}"] = result
-        return results
+        Execute the graph respecting dependencies.
+        """
+        # Initialize shared state
+        self.state["goal"] = graph.goal
 
-    async def _execute_step(self, step: PlanStep, goal: str):
-        if step.agent not in AGENT_FUNCTIONS:
-            raise NotImplementedError(f"Agent {step.agent} not implemented")
+        # Build dependency maps
+        dependencies = {node_id: set() for node_id in graph.nodes}
+        dependents = {node_id: set() for node_id in graph.nodes}
 
-        # Build structured input for the agent
-        if step.input is None:
-            input_payload = {
-                "goal": goal,
-                "previous_output": self._get_previous_output(),
-                "action": step.action,
-            }
-        else:
-            # If explicit input provided, unify into dict form if necessary
-            input_payload = step.input if isinstance(step.input, dict) else {"text": step.input}
+        for src, dst in graph.edges:
+            dependencies[dst].add(src)
+            dependents[src].add(dst)
 
-        agent_fn = AGENT_FUNCTIONS[step.agent]
-        return await agent_fn(input_payload)
+        # Start with entry nodes
+        ready = set(graph.entry_nodes)
 
-    def _get_previous_output(self):
-        """Return the output of the last executed step, if any."""
-        if not self.context:
-            return None
-        return list(self.context.values())[-1]
+        while ready:
+            node_id = ready.pop()
+            await self._execute_node(node_id, graph.nodes[node_id])
 
-    def parse_request(self, request):
-        """Convert ExecutorRequest into ExecutionPlan."""
-        steps = [
-            PlanStep(
-                step_id=step_item.get("step_id"),
-                agent=step_item.get("agent"),
-                action=step_item.get("action"),
-                input=step_item.get("input"),
-            )
-            for step_item in request.steps
-        ]
-        return ExecutionPlan(goal=request.goal, steps=steps)
+            self.completed_nodes.add(node_id)
+
+            # Unlock dependent nodes
+            for dependent in dependents.get(node_id, []):
+                if dependencies[dependent].issubset(self.completed_nodes):
+                    ready.add(dependent)
+
+        return self.state
+
+    async def _execute_node(self, node_id: str, node: NodeSpec):
+        if node.agent not in AGENT_REGISTRY:
+            raise NotImplementedError(f"Agent {node.agent} not implemented")
+
+        agent_fn = AGENT_REGISTRY[node.agent]
+
+        # Build input payload
+        input_payload = {
+            "goal": self.state.get("goal"),
+            "state": self.state,
+        }
+
+        # Entry nodes may have explicit input
+        if node.input is not None:
+            input_payload["input"] = node.input
+
+        result = await agent_fn(input_payload)
+
+        # Store output in shared state
+        self.state[node_id] = result

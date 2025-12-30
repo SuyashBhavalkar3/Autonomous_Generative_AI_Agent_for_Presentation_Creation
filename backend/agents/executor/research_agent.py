@@ -7,21 +7,30 @@ import dotenv
 dotenv.load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
-async def research_agent(input_data):
+
+async def research_agent(input_data: dict) -> str:
     """
-    input_data is expected to be a dict:
+    LangGraph-style node.
+
+    Expected input_data:
     {
         "goal": str,
-        "previous_output": str or None,
-        "action": str
+        "state": dict,
+        "input": optional
     }
     """
-    topic = input_data.get("goal") or "General topic"
+
+    goal = input_data.get("goal") or "General topic"
+
     prompt = f"""
-    You are a research assistant. Summarize key points about the following topic:
-    Topic: {topic}
-    Provide concise points suitable for slide content.
-    """
+You are a research assistant.
+Summarize key points about the following topic.
+
+Topic: {goal}
+
+Provide concise bullet points suitable for slides.
+"""
+
     try:
         response = await asyncio.to_thread(
             lambda: openai.chat.completions.create(
@@ -31,7 +40,7 @@ async def research_agent(input_data):
                 temperature=0.5,
             )
         )
-        # Always return string
         return response.choices[0].message.content.strip()
+
     except Exception as e:
-        return f"Error: {str(e)}"
+        return f"ResearchAgentError: {str(e)}"

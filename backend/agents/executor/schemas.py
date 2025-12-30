@@ -1,14 +1,26 @@
 from pydantic import BaseModel
-from typing import List, Optional
+from typing import Any, List
 
-class ExecutorStepResult(BaseModel):
-    step_id: int
-    agent: str
-    output: Optional[str]
 
 class ExecutorRequest(BaseModel):
+    """
+    Executor request now only needs the user goal.
+    Planner builds the graph internally.
+    """
     goal: str
-    steps: List[dict]  # Accepts Planner ExecutionPlan JSON
+
+
+class ExecutorNodeResult(BaseModel):
+    """
+    Represents the output of a graph node.
+    """
+    node: str
+    agent: str
+    output: Any
+
 
 class ExecutorResponse(BaseModel):
-    results: List[ExecutorStepResult]
+    """
+    Graph execution response.
+    """
+    results: List[ExecutorNodeResult]

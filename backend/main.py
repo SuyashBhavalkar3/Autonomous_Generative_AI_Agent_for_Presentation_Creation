@@ -7,7 +7,7 @@ from agents.executor.routes import router as executor_router
 
 app = FastAPI(
     title="Autonomous PPT Generation API",
-    description="Planner + Executor multi-agent system",
+    description="LangGraph-style DAG-based autonomous multi-agent system",
     version="1.0.0",
 )
 

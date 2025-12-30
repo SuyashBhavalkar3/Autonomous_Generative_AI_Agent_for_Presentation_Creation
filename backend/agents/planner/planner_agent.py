@@ -1,96 +1,49 @@
-from .schemas import ExecutionPlan, PlanStep
 from ..registry import ALLOWED_AGENTS
+from .schemas import GraphSpec, NodeSpec
+
 
 class PlannerAgent:
+    """
+    LangGraph-style planner agent that generates a DAG of nodes for execution.
+    """
+
     def __init__(self):
         pass
 
-    def create_plan(self, user_goal: str) -> ExecutionPlan:
-        """
-        Create an execution plan including all relevant agents.
-        Sequence: research -> content -> images -> slides -> code (optional)
-        """
+    def create_plan(self, user_goal: str, num_slides: int = None) -> GraphSpec:
         if not user_goal or not user_goal.strip():
             raise ValueError("User goal cannot be empty")
 
-        steps = []
-        step_id = 1
-        goal_lower = user_goal.lower()
+        # Convert to int if provided
+        if num_slides is not None:
+            num_slides = int(num_slides)
 
-        # 1️⃣ Research step (only step with initial input)
-        if any(keyword in goal_lower for keyword in ["research", "analyze", "ppt", "presentation"]):
-            steps.append(
-                PlanStep(
-                    step_id=step_id,
-                    agent="research_agent",
-                    action="Research the topic and gather key points",
-                    input=user_goal  # Only step that explicitly gets user goal
-                )
-            )
-            step_id += 1
+        # Default to 14 if not provided
+        if num_slides is None:
+            num_slides = 14
 
-        # 2️⃣ Content creation (input comes from previous step automatically)
-        if any(keyword in goal_lower for keyword in ["ppt", "presentation"]):
-            steps.append(
-                PlanStep(
-                    step_id=step_id,
-                    agent="content_agent",
-                    action="Create slide-wise structured content"
-                )
-            )
-            step_id += 1
+        # Clamp to 1–14
+        num_slides = max(1, min(num_slides, 14))
 
-        # 3️⃣ Image collection
-        if any(keyword in goal_lower for keyword in ["ppt", "presentation"]):
-            steps.append(
-                PlanStep(
-                    step_id=step_id,
-                    agent="image_agent",
-                    action="Fetch relevant images for the slides"
-                )
-            )
-            step_id += 1
+        # Build nodes
+        nodes = {
+            "research_agent": NodeSpec(agent="research_agent", input=user_goal),
+            "content_agent": NodeSpec(agent="content_agent", input={"num_slides": num_slides}),
+            "image_agent": NodeSpec(agent="image_agent", input=None),
+            "slide_agent": NodeSpec(agent="slide_agent", input={"num_slides": num_slides}),
+        }
 
-        # 4️⃣ Slide generation
-        if any(keyword in goal_lower for keyword in ["ppt", "presentation"]):
-            steps.append(
-                PlanStep(
-                    step_id=step_id,
-                    agent="slide_agent",
-                    action="Generate slides using content and images"
-                )
-            )
-            step_id += 1
+        edges = [
+            ("research_agent", "content_agent"),
+            ("content_agent", "image_agent"),
+            ("content_agent", "slide_agent"),
+        ]
 
-        # 5️⃣ Optional code agent if goal mentions code/demo
-        if any(keyword in goal_lower for keyword in ["code", "demo"]):
-            steps.append(
-                PlanStep(
-                    step_id=step_id,
-                    agent="code_agent",
-                    action="Generate relevant code snippet"
-                )
-            )
-            step_id += 1
-
-        # Safety fallback: if no steps detected
-        if not steps:
-            steps.append(
-                PlanStep(
-                    step_id=1,
-                    agent="content_agent",
-                    action="Understand the goal and generate relevant output",
-                    input=user_goal
-                )
-            )
-
-        # Normalize step IDs
-        for i, step in enumerate(steps, start=1):
-            step.step_id = i
+        entry_nodes = ["research_agent"]
 
         # Validate agents
-        invalid_agents = {s.agent for s in steps} - ALLOWED_AGENTS
+        invalid_agents = {node.agent for node in nodes.values()} - ALLOWED_AGENTS
         if invalid_agents:
             raise ValueError(f"Invalid agents detected: {invalid_agents}")
 
-        return ExecutionPlan(goal=user_goal, steps=steps)
+        return GraphSpec(goal=user_goal, nodes=nodes, edges=edges, entry_nodes=entry_nodes)
