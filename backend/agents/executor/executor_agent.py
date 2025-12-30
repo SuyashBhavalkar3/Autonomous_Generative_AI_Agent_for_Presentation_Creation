@@ -20,6 +20,7 @@ class GraphExecutor:
         """
         # Initialize shared state
         self.state["goal"] = graph.goal
+        self.state["num_slides"] = getattr(graph, "num_slides", 14)
 
         # Build dependency maps
         dependencies = {node_id: set() for node_id in graph.nodes}

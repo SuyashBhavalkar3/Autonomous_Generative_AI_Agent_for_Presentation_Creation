@@ -44,3 +44,5 @@ class GraphSpec(BaseModel):
     nodes: Dict[str, NodeSpec]
     edges: List[tuple[str, str]]
     entry_nodes: List[str]
+    # Optional overall graph-level settings
+    num_slides: Optional[int] = None

@@ -26,11 +26,12 @@ class PlannerAgent:
         num_slides = max(1, min(num_slides, 14))
 
         # Build nodes
+        # Do not inject num_slides via NodeSpec.input; use shared GraphSpec/state
         nodes = {
             "research_agent": NodeSpec(agent="research_agent", input=user_goal),
-            "content_agent": NodeSpec(agent="content_agent", input={"num_slides": num_slides}),
+            "content_agent": NodeSpec(agent="content_agent", input=None),
             "image_agent": NodeSpec(agent="image_agent", input=None),
-            "slide_agent": NodeSpec(agent="slide_agent", input={"num_slides": num_slides}),
+            "slide_agent": NodeSpec(agent="slide_agent", input=None),
         }
 
         edges = [
@@ -46,4 +47,4 @@ class PlannerAgent:
         if invalid_agents:
             raise ValueError(f"Invalid agents detected: {invalid_agents}")
 
-        return GraphSpec(goal=user_goal, nodes=nodes, edges=edges, entry_nodes=entry_nodes)
+        return GraphSpec(goal=user_goal, nodes=nodes, edges=edges, entry_nodes=entry_nodes, num_slides=num_slides)
