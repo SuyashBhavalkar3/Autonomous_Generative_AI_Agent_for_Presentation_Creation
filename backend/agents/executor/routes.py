@@ -21,15 +21,18 @@ async def run_execution(request: ExecutorRequest):
     # 2️⃣ Execute graph
     final_state = await executor.execute(graph)
 
-    # 3️⃣ Format response (exclude meta keys like 'goal')
-    results = [
-        {
+    # 3️⃣ Format response: include only nodes that are part of the graph
+    results = []
+    for node_id, output in final_state.items():
+        if node_id == "goal":
+            continue
+        if node_id not in graph.nodes:
+            # skip meta/state keys like 'num_slides' or others
+            continue
+        results.append({
             "node": node_id,
             "agent": graph.nodes[node_id].agent,
             "output": output,
-        }
-        for node_id, output in final_state.items()
-        if node_id != "goal"
-    ]
+        })
 
     return {"results": results}

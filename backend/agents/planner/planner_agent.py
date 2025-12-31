@@ -32,12 +32,15 @@ class PlannerAgent:
             "content_agent": NodeSpec(agent="content_agent", input=None),
             "image_agent": NodeSpec(agent="image_agent", input=None),
             "slide_agent": NodeSpec(agent="slide_agent", input=None),
+            # final executor that builds the PPTX
+            "executor_agent": NodeSpec(agent="executor_agent", input=None),
         }
 
         edges = [
             ("research_agent", "content_agent"),
             ("content_agent", "image_agent"),
             ("content_agent", "slide_agent"),
+            ("slide_agent", "executor_agent"),
         ]
 
         entry_nodes = ["research_agent"]

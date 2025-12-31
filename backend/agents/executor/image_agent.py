@@ -70,10 +70,10 @@ async def fetch_image_url(query: str) -> str:
             if isinstance(data, list) and data and "urls" in data[0]:
                 return data[0]["urls"]["regular"]
 
-            return "ImageAgentError: Bad response"
+            return None
 
-        except Exception as e:
-            return f"ImageAgentError: {str(e)}"
+        except Exception:
+            return None
 
 
 # ---------------------------
@@ -107,9 +107,10 @@ async def image_agent(input_data: dict) -> dict:
         image_url = None
         for query in queries:
             image_url = await fetch_image_url(query)
-            if not image_url.startswith("ImageAgentError"):
+            if image_url:
                 break
 
+        # store None when no valid image found
         results[f"slide_{idx}"] = image_url
 
     return results

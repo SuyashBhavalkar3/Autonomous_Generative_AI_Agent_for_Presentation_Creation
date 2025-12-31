@@ -1,8 +1,11 @@
 # executor_agent.py
+import logging
 from typing import Dict, Set
 
 from ..planner.schemas import GraphSpec, NodeSpec
 from ..registry import AGENT_REGISTRY
+
+logger = logging.getLogger(__name__)
 
 
 class GraphExecutor:
@@ -52,6 +55,10 @@ class GraphExecutor:
 
         agent_fn = AGENT_REGISTRY[node.agent]
 
+        if agent_fn is None:
+            logger.error("Agent %s is registered but implementation is None", node.agent)
+            raise NotImplementedError(f"Agent {node.agent} implementation missing")
+
         # Build input payload
         input_payload = {
             "goal": self.state.get("goal"),
@@ -66,3 +73,4 @@ class GraphExecutor:
 
         # Store output in shared state
         self.state[node_id] = result
+        logger.debug("Node %s executed. Stored output under state[%s]", node.agent, node_id)
