@@ -20,6 +20,7 @@ genAI_env/
 # ===============================
 backend/.env
 backend/.env.*
+backend/output/
 
 # ===============================
 # Databases
