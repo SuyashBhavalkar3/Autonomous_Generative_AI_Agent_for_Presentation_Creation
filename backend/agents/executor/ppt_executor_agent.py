@@ -60,6 +60,7 @@ async def executor_agent(input_data: Dict) -> Dict:
             "title": s.get("title", f"Slide {idx}"),
             "bullets": s.get("bullets", []),
             "image_path": str(image_path) if image_path else None,
+            "image_url": image_url if image_url else None,
         })
 
     # Build and save the pptx to output/presentations

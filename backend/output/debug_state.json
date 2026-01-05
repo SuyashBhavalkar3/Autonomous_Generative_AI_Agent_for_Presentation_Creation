@@ -1,117 +1,142 @@
 {
-  "goal": "IArtificial Intelligence Presentation",
+  "goal": "Introduction To Artificial Intelligence",
   "num_slides": 5,
-  "research_agent": "- Definition of Artificial Intelligence (AI)\n- History and development of AI\n- Applications of AI in various industries (e.g. healthcare, finance, transportation)\n- Benefits of AI (efficiency, accuracy, cost savings)\n- Challenges and ethical considerations of AI\n- Future trends and advancements in AI technology",
-  "content_agent": "1. Definition of Artificial Intelligence (AI)\n- AI refers to the simulation of human intelligence processes by machines, especially computer systems.\n- It involves learning, reasoning, problem-solving, perception, and language understanding.\n- AI can be categorized as narrow AI (weak AI) or general AI (strong AI).\n\n2. History and Development of AI\n- The concept of AI dates back to ancient times, but modern AI research began in the 1950s.\n- Key milestones include the development of expert systems, neural networks, and machine learning algorithms.\n- AI has evolved rapidly with advancements in computing power and data availability.\n\n3. Applications of AI in Various Industries\n- Healthcare: AI is used for medical imaging analysis, personalized treatment plans, and drug discovery.\n- Finance: AI powers algorithmic trading, fraud detection, and customer service chatbots.\n- Transportation: AI enables autonomous vehicles, traffic management systems, and predictive maintenance.\n\n4. Benefits of AI\n- Efficiency: AI can automate repetitive tasks and streamline processes.\n- Accuracy: AI algorithms can analyze vast amounts of data with precision.\n- Cost savings: AI solutions can reduce operational expenses and improve decision-making.\n\n5. Challenges and Ethical Considerations of AI\n- Bias: AI systems can reflect and perpetuate societal biases present in training data.\n- Privacy: AI raises concerns about data security and individual privacy.\n- Job displacement: AI automation may lead to job losses and require workforce reskilling.\n\n6. Future Trends and Advancements in AI Technology\n- Explainable AI: Efforts are being made to make AI algorithms more transparent and interpretable.\n- AI ethics: Organizations are developing guidelines and frameworks for responsible AI use.\n- Quantum AI: Quantum computing could revolutionize AI capabilities by solving complex problems faster.",
+  "research_agent": "- Artificial intelligence (AI) is a branch of computer science that aims to create intelligent machines that can mimic human cognitive functions.\n- AI involves the development of algorithms and models that enable machines to learn from data, make decisions, and perform tasks that typically require human intelligence.\n- There are different types of AI, including narrow AI (focused on specific tasks) and general AI (capable of performing any intellectual task that a human can).\n- AI technologies include machine learning, natural language processing, computer vision, and robotics.\n- AI has applications in various industries, such as healthcare, finance, transportation, and entertainment.\n- Ethical considerations, such as bias in AI algorithms and the impact on the job market, are important factors to consider in the development and deployment of AI technologies.",
+  "content_agent": "1. Introduction to Artificial Intelligence\n- AI is a branch of computer science creating intelligent machines.\n- Involves developing algorithms for learning, decision-making, and task performance.\n- Types of AI: narrow AI (specific tasks) and general AI (any intellectual task).\n- AI technologies: machine learning, natural language processing, computer vision, robotics.\n- Applications in healthcare, finance, transportation, entertainment.\n\n2. Types of Artificial Intelligence\n- Narrow AI: focuses on specific tasks.\n- General AI: capable of performing any intellectual task.\n- Narrow AI is more common and practical in current applications.\n- General AI is a long-term goal with significant challenges.\n- Both types have unique strengths and limitations.\n\n3. Artificial Intelligence Technologies\n- Machine learning: algorithms that learn from data.\n- Natural language processing: understanding and generating human language.\n- Computer vision: interpreting and analyzing visual information.\n- Robotics: physical machines capable of autonomous actions.\n- These technologies work together to create intelligent systems.\n\n4. Applications of Artificial Intelligence\n- Healthcare: diagnosis, treatment, personalized medicine.\n- Finance: fraud detection, trading algorithms, risk assessment.\n- Transportation: autonomous vehicles, traffic optimization.\n- Entertainment: recommendation systems, content creation.\n- AI is transforming industries and improving efficiency and decision-making.\n\n5. Ethical Considerations in Artificial Intelligence\n- Bias in AI algorithms: reflecting and perpetuating societal biases.\n- Impact on the job market: automation of tasks leading to job displacement.\n- Privacy concerns: data collection and surveillance.\n- Regulation and oversight: ensuring responsible development and deployment.\n- Ethical considerations are crucial for the responsible use of AI technologies.",
+  "image_agent": {
+    "slide_1": "https://images.unsplash.com/photo-1761223976272-0d6d4bc38636?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc1OTE2NjN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "slide_2": "https://images.unsplash.com/photo-1744986014553-e5e866de814b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc1OTE2NjV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "slide_3": "https://images.unsplash.com/photo-1677442136019-21780ecad995?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc1OTE2NjZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "slide_4": "https://images.unsplash.com/photo-1717501219291-29f30b728f86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc1OTE2Njh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "slide_5": "https://images.unsplash.com/photo-1717501217875-b5bbe1480a88?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc1OTE2NzB8&ixlib=rb-4.1.0&q=80&w=1080"
+  },
   "slide_agent": {
     "slides": [
       {
-        "title": "Definition of Artificial Intelligence (AI)",
+        "title": "Introduction to Artificial Intelligence",
         "bullets": [
-          "AI refers to the simulation of human intelligence processes by machines, especially computer systems.",
-          "It involves learning, reasoning, problem-solving, perception, and language understanding.",
-          "AI can be categorized as narrow AI (weak AI) or general AI (strong AI)."
+          "AI is a branch of computer science creating intelligent machines.",
+          "Involves developing algorithms for learning, decision-making, and task performance.",
+          "Types of AI: narrow AI (specific tasks) and general AI (any intellectual task).",
+          "AI technologies: machine learning, natural language processing, computer vision, robotics.",
+          "Applications in healthcare, finance, transportation, entertainment."
         ],
-        "image_url": null
+        "image_url": "https://images.unsplash.com/photo-1761223976272-0d6d4bc38636?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc1OTE2NjN8&ixlib=rb-4.1.0&q=80&w=1080"
       },
       {
-        "title": "History and Development of AI",
+        "title": "Types of Artificial Intelligence",
         "bullets": [
-          "The concept of AI dates back to ancient times, but modern AI research began in the 1950s.",
-          "Key milestones include the development of expert systems, neural networks, and machine learning algorithms.",
-          "AI has evolved rapidly with advancements in computing power and data availability."
+          "Narrow AI: focuses on specific tasks.",
+          "General AI: capable of performing any intellectual task.",
+          "Narrow AI is more common and practical in current applications.",
+          "General AI is a long-term goal with significant challenges.",
+          "Both types have unique strengths and limitations."
         ],
-        "image_url": null
+        "image_url": "https://images.unsplash.com/photo-1744986014553-e5e866de814b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc1OTE2NjV8&ixlib=rb-4.1.0&q=80&w=1080"
       },
       {
-        "title": "Applications of AI in Various Industries",
+        "title": "Artificial Intelligence Technologies",
         "bullets": [
-          "Healthcare: AI is used for medical imaging analysis, personalized treatment plans, and drug discovery.",
-          "Finance: AI powers algorithmic trading, fraud detection, and customer service chatbots.",
-          "Transportation: AI enables autonomous vehicles, traffic management systems, and predictive maintenance."
+          "Machine learning: algorithms that learn from data.",
+          "Natural language processing: understanding and generating human language.",
+          "Computer vision: interpreting and analyzing visual information.",
+          "Robotics: physical machines capable of autonomous actions.",
+          "These technologies work together to create intelligent systems."
         ],
-        "image_url": null
+        "image_url": "https://images.unsplash.com/photo-1677442136019-21780ecad995?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc1OTE2NjZ8&ixlib=rb-4.1.0&q=80&w=1080"
       },
       {
-        "title": "Benefits of AI",
+        "title": "Applications of Artificial Intelligence",
         "bullets": [
-          "Efficiency: AI can automate repetitive tasks and streamline processes.",
-          "Accuracy: AI algorithms can analyze vast amounts of data with precision.",
-          "Cost savings: AI solutions can reduce operational expenses and improve decision-making."
+          "Healthcare: diagnosis, treatment, personalized medicine.",
+          "Finance: fraud detection, trading algorithms, risk assessment.",
+          "Transportation: autonomous vehicles, traffic optimization.",
+          "Entertainment: recommendation systems, content creation.",
+          "AI is transforming industries and improving efficiency and decision-making."
         ],
-        "image_url": null
+        "image_url": "https://images.unsplash.com/photo-1717501219291-29f30b728f86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc1OTE2Njh8&ixlib=rb-4.1.0&q=80&w=1080"
       },
       {
-        "title": "Challenges and Ethical Considerations of AI",
+        "title": "Ethical Considerations in Artificial Intelligence",
         "bullets": [
-          "Bias: AI systems can reflect and perpetuate societal biases present in training data.",
-          "Privacy: AI raises concerns about data security and individual privacy.",
-          "Job displacement: AI automation may lead to job losses and require workforce reskilling."
+          "Bias in AI algorithms: reflecting and perpetuating societal biases.",
+          "Impact on the job market: automation of tasks leading to job displacement.",
+          "Privacy concerns: data collection and surveillance.",
+          "Regulation and oversight: ensuring responsible development and deployment.",
+          "Ethical considerations are crucial for the responsible use of AI technologies."
         ],
-        "image_url": null
+        "image_url": "https://images.unsplash.com/photo-1717501217875-b5bbe1480a88?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc1OTE2NzB8&ixlib=rb-4.1.0&q=80&w=1080"
       }
     ]
   },
   "executor_agent": {
-    "output_file": "output\\presentations\\presentation_f398751f08454f9ea30fe83cde124749.pptx",
+    "output_file": "output\\presentations\\presentation_c50fdb08120646ef91abdee3782ba649.pptx",
     "slides": [
       {
         "slide_id": 1,
-        "title": "Definition of Artificial Intelligence (AI)",
+        "title": "Introduction to Artificial Intelligence",
         "bullets": [
-          "AI refers to the simulation of human intelligence processes by machines, especially computer systems.",
-          "It involves learning, reasoning, problem-solving, perception, and language understanding.",
-          "AI can be categorized as narrow AI (weak AI) or general AI (strong AI)."
+          "AI is a branch of computer science creating intelligent machines.",
+          "Involves developing algorithms for learning, decision-making, and task performance.",
+          "Types of AI: narrow AI (specific tasks) and general AI (any intellectual task).",
+          "AI technologies: machine learning, natural language processing, computer vision, robotics.",
+          "Applications in healthcare, finance, transportation, entertainment."
         ],
-        "image_path": null
+        "image_path": "output\\images\\7954ba60578f43ad8ae21ba85405bbf8\\photo-1761223976272-0d6d4bc38636.jpg",
+        "image_url": "https://images.unsplash.com/photo-1761223976272-0d6d4bc38636?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc1OTE2NjN8&ixlib=rb-4.1.0&q=80&w=1080"
       },
       {
         "slide_id": 2,
-        "title": "History and Development of AI",
+        "title": "Types of Artificial Intelligence",
         "bullets": [
-          "The concept of AI dates back to ancient times, but modern AI research began in the 1950s.",
-          "Key milestones include the development of expert systems, neural networks, and machine learning algorithms.",
-          "AI has evolved rapidly with advancements in computing power and data availability."
+          "Narrow AI: focuses on specific tasks.",
+          "General AI: capable of performing any intellectual task.",
+          "Narrow AI is more common and practical in current applications.",
+          "General AI is a long-term goal with significant challenges.",
+          "Both types have unique strengths and limitations."
         ],
-        "image_path": null
+        "image_path": "output\\images\\7954ba60578f43ad8ae21ba85405bbf8\\photo-1744986014553-e5e866de814b.jpg",
+        "image_url": "https://images.unsplash.com/photo-1744986014553-e5e866de814b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc1OTE2NjV8&ixlib=rb-4.1.0&q=80&w=1080"
       },
       {
         "slide_id": 3,
-        "title": "Applications of AI in Various Industries",
+        "title": "Artificial Intelligence Technologies",
         "bullets": [
-          "Healthcare: AI is used for medical imaging analysis, personalized treatment plans, and drug discovery.",
-          "Finance: AI powers algorithmic trading, fraud detection, and customer service chatbots.",
-          "Transportation: AI enables autonomous vehicles, traffic management systems, and predictive maintenance."
+          "Machine learning: algorithms that learn from data.",
+          "Natural language processing: understanding and generating human language.",
+          "Computer vision: interpreting and analyzing visual information.",
+          "Robotics: physical machines capable of autonomous actions.",
+          "These technologies work together to create intelligent systems."
         ],
-        "image_path": null
+        "image_path": "output\\images\\7954ba60578f43ad8ae21ba85405bbf8\\photo-1677442136019-21780ecad995.jpg",
+        "image_url": "https://images.unsplash.com/photo-1677442136019-21780ecad995?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc1OTE2NjZ8&ixlib=rb-4.1.0&q=80&w=1080"
       },
       {
         "slide_id": 4,
-        "title": "Benefits of AI",
+        "title": "Applications of Artificial Intelligence",
         "bullets": [
-          "Efficiency: AI can automate repetitive tasks and streamline processes.",
-          "Accuracy: AI algorithms can analyze vast amounts of data with precision.",
-          "Cost savings: AI solutions can reduce operational expenses and improve decision-making."
+          "Healthcare: diagnosis, treatment, personalized medicine.",
+          "Finance: fraud detection, trading algorithms, risk assessment.",
+          "Transportation: autonomous vehicles, traffic optimization.",
+          "Entertainment: recommendation systems, content creation.",
+          "AI is transforming industries and improving efficiency and decision-making."
         ],
-        "image_path": null
+        "image_path": "output\\images\\7954ba60578f43ad8ae21ba85405bbf8\\photo-1717501219291-29f30b728f86.jpg",
+        "image_url": "https://images.unsplash.com/photo-1717501219291-29f30b728f86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc1OTE2Njh8&ixlib=rb-4.1.0&q=80&w=1080"
       },
       {
         "slide_id": 5,
-        "title": "Challenges and Ethical Considerations of AI",
+        "title": "Ethical Considerations in Artificial Intelligence",
         "bullets": [
-          "Bias: AI systems can reflect and perpetuate societal biases present in training data.",
-          "Privacy: AI raises concerns about data security and individual privacy.",
-          "Job displacement: AI automation may lead to job losses and require workforce reskilling."
+          "Bias in AI algorithms: reflecting and perpetuating societal biases.",
+          "Impact on the job market: automation of tasks leading to job displacement.",
+          "Privacy concerns: data collection and surveillance.",
+          "Regulation and oversight: ensuring responsible development and deployment.",
+          "Ethical considerations are crucial for the responsible use of AI technologies."
         ],
-        "image_path": null
+        "image_path": "output\\images\\7954ba60578f43ad8ae21ba85405bbf8\\photo-1717501217875-b5bbe1480a88.jpg",
+        "image_url": "https://images.unsplash.com/photo-1717501217875-b5bbe1480a88?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc1OTE2NzB8&ixlib=rb-4.1.0&q=80&w=1080"
       }
     ]
-  },
-  "image_agent": {
-    "slide_1": "https://images.unsplash.com/photo-1739054729970-45f867e65aee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjcxODAyODV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "slide_2": "https://images.unsplash.com/photo-1582547538038-8889da52fec5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjcxODAyODd8&ixlib=rb-4.1.0&q=80&w=1080",
-    "slide_3": "https://images.unsplash.com/photo-1675285410608-ddd6bb430b19?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjcxODAyOTB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "slide_4": "https://images.unsplash.com/photo-1696258686308-7ea792cf76b6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjcxODAyOTJ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "slide_5": "https://images.unsplash.com/photo-1540206911447-40b1545a8b76?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjcxODAyOTR8&ixlib=rb-4.1.0&q=80&w=1080"
   }
 }

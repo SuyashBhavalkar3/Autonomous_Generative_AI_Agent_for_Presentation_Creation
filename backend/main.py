@@ -67,8 +67,37 @@ async def generate_ppt(req: GeneratePPTRequest, request: Request):
         output_file = executor_out.get("output_file")
 
     if not output_file or not os.path.exists(output_file):
-        # If executor_agent didn't produce a file, return an informative error
-        raise HTTPException(status_code=500, detail="Presentation build failed or output file missing")
+        # If executor_agent didn't produce a file, attempt to build here using slides
+        # Reuse existing ppt_builder which supports downloading images from `image_url`.
+        try:
+            from ppt.ppt_builder import build_presentation
+            from pathlib import Path
+
+            # Prefer slides produced by executor_agent if present, else fallback to slide_agent
+            slides = None
+            if isinstance(executor_out, dict):
+                slides = executor_out.get("slides")
+            if not slides:
+                slide_agent_out = final_state.get("slide_agent") or {}
+                if isinstance(slide_agent_out, dict):
+                    slides = slide_agent_out.get("slides")
+
+            if not slides:
+                raise HTTPException(status_code=500, detail="Presentation build failed or output file missing")
+
+            out_dir = Path("output") / "presentations"
+            out_dir.mkdir(parents=True, exist_ok=True)
+            import uuid as _u
+            filename = f"presentation_fallback_{_u.uuid4().hex}.pptx"
+            out_path = out_dir / filename
+
+            # build_presentation will download images when slides include `image_url`
+            build_presentation(slides, out_path)
+            output_file = str(out_path)
+        except HTTPException:
+            raise
+        except Exception as e:
+            raise HTTPException(status_code=500, detail=f"Presentation build failed: {e}")
 
     # Return the generated PPT file directly as a downloadable response
     from fastapi.responses import FileResponse
