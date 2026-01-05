@@ -1,141 +1,37 @@
 {
-  "goal": "Introduction To Artificial Intelligence",
-  "num_slides": 5,
-  "research_agent": "- Artificial intelligence (AI) is a branch of computer science that aims to create intelligent machines that can mimic human cognitive functions.\n- AI involves the development of algorithms and models that enable machines to learn from data, make decisions, and perform tasks that typically require human intelligence.\n- There are different types of AI, including narrow AI (focused on specific tasks) and general AI (capable of performing any intellectual task that a human can).\n- AI technologies include machine learning, natural language processing, computer vision, and robotics.\n- AI has applications in various industries, such as healthcare, finance, transportation, and entertainment.\n- Ethical considerations, such as bias in AI algorithms and the impact on the job market, are important factors to consider in the development and deployment of AI technologies.",
-  "content_agent": "1. Introduction to Artificial Intelligence\n- AI is a branch of computer science creating intelligent machines.\n- Involves developing algorithms for learning, decision-making, and task performance.\n- Types of AI: narrow AI (specific tasks) and general AI (any intellectual task).\n- AI technologies: machine learning, natural language processing, computer vision, robotics.\n- Applications in healthcare, finance, transportation, entertainment.\n\n2. Types of Artificial Intelligence\n- Narrow AI: focuses on specific tasks.\n- General AI: capable of performing any intellectual task.\n- Narrow AI is more common and practical in current applications.\n- General AI is a long-term goal with significant challenges.\n- Both types have unique strengths and limitations.\n\n3. Artificial Intelligence Technologies\n- Machine learning: algorithms that learn from data.\n- Natural language processing: understanding and generating human language.\n- Computer vision: interpreting and analyzing visual information.\n- Robotics: physical machines capable of autonomous actions.\n- These technologies work together to create intelligent systems.\n\n4. Applications of Artificial Intelligence\n- Healthcare: diagnosis, treatment, personalized medicine.\n- Finance: fraud detection, trading algorithms, risk assessment.\n- Transportation: autonomous vehicles, traffic optimization.\n- Entertainment: recommendation systems, content creation.\n- AI is transforming industries and improving efficiency and decision-making.\n\n5. Ethical Considerations in Artificial Intelligence\n- Bias in AI algorithms: reflecting and perpetuating societal biases.\n- Impact on the job market: automation of tasks leading to job displacement.\n- Privacy concerns: data collection and surveillance.\n- Regulation and oversight: ensuring responsible development and deployment.\n- Ethical considerations are crucial for the responsible use of AI technologies.",
+  "goal": "presentation on photosynthesis",
+  "num_slides": 1,
+  "research_agent": "- Photosynthesis is the process by which plants, algae, and some bacteria convert light energy into chemical energy.\n- It takes place in the chloroplasts of plant cells and involves the conversion of carbon dioxide and water into glucose and oxygen.\n- The overall equation for photosynthesis is: 6CO2 + 6H2O + light energy \u2192 C6H12O6 + 6O2.\n- The two main stages of photosynthesis are the light-dependent reactions and the light-independent reactions (Calvin cycle).\n- Factors that affect photosynthesis include light intensity, temperature, and the availability of water and carbon dioxide.\n- Photosynthesis is essential for life on Earth as it provides oxygen for respiration and is the basis of the food chain.",
+  "content_agent": "1. Introduction to Photosynthesis\n- Photosynthesis is the process of converting light energy into chemical energy.\n- It occurs in the chloroplasts of plant cells.\n- The equation for photosynthesis is: 6CO2 + 6H2O + light energy \u2192 C6H12O6 + 6O2.\n\n2. Stages of Photosynthesis\n- Photosynthesis consists of two main stages: light-dependent reactions and light-independent reactions (Calvin cycle).\n- Light-dependent reactions occur in the thylakoid membranes of the chloroplasts.\n- Light-independent reactions (Calvin cycle) take place in the stroma of the chloroplasts.\n\n3. Factors Affecting Photosynthesis\n- Light intensity plays a crucial role in the rate of photosynthesis.\n- Temperature affects the enzymes involved in photosynthesis.\n- The availability of water and carbon dioxide are essential for the process to occur efficiently.\n\n4. Importance of Photosynthesis\n- Photosynthesis provides oxygen for respiration.\n- It is the basis of the food chain, as plants are the primary producers.\n- Without photosynthesis, life on Earth as we know it would not be sustainable.",
   "image_agent": {
-    "slide_1": "https://images.unsplash.com/photo-1761223976272-0d6d4bc38636?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc1OTE2NjN8&ixlib=rb-4.1.0&q=80&w=1080",
-    "slide_2": "https://images.unsplash.com/photo-1744986014553-e5e866de814b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc1OTE2NjV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "slide_3": "https://images.unsplash.com/photo-1677442136019-21780ecad995?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc1OTE2NjZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "slide_4": "https://images.unsplash.com/photo-1717501219291-29f30b728f86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc1OTE2Njh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "slide_5": "https://images.unsplash.com/photo-1717501217875-b5bbe1480a88?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc1OTE2NzB8&ixlib=rb-4.1.0&q=80&w=1080"
+    "slide_1": "https://images.unsplash.com/photo-1662906551190-8cb78688bf87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc1OTg1OTd8&ixlib=rb-4.1.0&q=80&w=1080"
   },
   "slide_agent": {
     "slides": [
       {
-        "title": "Introduction to Artificial Intelligence",
+        "title": "Introduction to Photosynthesis",
         "bullets": [
-          "AI is a branch of computer science creating intelligent machines.",
-          "Involves developing algorithms for learning, decision-making, and task performance.",
-          "Types of AI: narrow AI (specific tasks) and general AI (any intellectual task).",
-          "AI technologies: machine learning, natural language processing, computer vision, robotics.",
-          "Applications in healthcare, finance, transportation, entertainment."
+          "Photosynthesis is the process of converting light energy into chemical energy.",
+          "It occurs in the chloroplasts of plant cells.",
+          "The equation for photosynthesis is: 6CO2 + 6H2O + light energy \u2192 C6H12O6 + 6O2."
         ],
-        "image_url": "https://images.unsplash.com/photo-1761223976272-0d6d4bc38636?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc1OTE2NjN8&ixlib=rb-4.1.0&q=80&w=1080"
-      },
-      {
-        "title": "Types of Artificial Intelligence",
-        "bullets": [
-          "Narrow AI: focuses on specific tasks.",
-          "General AI: capable of performing any intellectual task.",
-          "Narrow AI is more common and practical in current applications.",
-          "General AI is a long-term goal with significant challenges.",
-          "Both types have unique strengths and limitations."
-        ],
-        "image_url": "https://images.unsplash.com/photo-1744986014553-e5e866de814b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc1OTE2NjV8&ixlib=rb-4.1.0&q=80&w=1080"
-      },
-      {
-        "title": "Artificial Intelligence Technologies",
-        "bullets": [
-          "Machine learning: algorithms that learn from data.",
-          "Natural language processing: understanding and generating human language.",
-          "Computer vision: interpreting and analyzing visual information.",
-          "Robotics: physical machines capable of autonomous actions.",
-          "These technologies work together to create intelligent systems."
-        ],
-        "image_url": "https://images.unsplash.com/photo-1677442136019-21780ecad995?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc1OTE2NjZ8&ixlib=rb-4.1.0&q=80&w=1080"
-      },
-      {
-        "title": "Applications of Artificial Intelligence",
-        "bullets": [
-          "Healthcare: diagnosis, treatment, personalized medicine.",
-          "Finance: fraud detection, trading algorithms, risk assessment.",
-          "Transportation: autonomous vehicles, traffic optimization.",
-          "Entertainment: recommendation systems, content creation.",
-          "AI is transforming industries and improving efficiency and decision-making."
-        ],
-        "image_url": "https://images.unsplash.com/photo-1717501219291-29f30b728f86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc1OTE2Njh8&ixlib=rb-4.1.0&q=80&w=1080"
-      },
-      {
-        "title": "Ethical Considerations in Artificial Intelligence",
-        "bullets": [
-          "Bias in AI algorithms: reflecting and perpetuating societal biases.",
-          "Impact on the job market: automation of tasks leading to job displacement.",
-          "Privacy concerns: data collection and surveillance.",
-          "Regulation and oversight: ensuring responsible development and deployment.",
-          "Ethical considerations are crucial for the responsible use of AI technologies."
-        ],
-        "image_url": "https://images.unsplash.com/photo-1717501217875-b5bbe1480a88?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc1OTE2NzB8&ixlib=rb-4.1.0&q=80&w=1080"
+        "image_url": "https://images.unsplash.com/photo-1662906551190-8cb78688bf87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc1OTg1OTd8&ixlib=rb-4.1.0&q=80&w=1080"
       }
     ]
   },
   "executor_agent": {
-    "output_file": "output\\presentations\\presentation_c50fdb08120646ef91abdee3782ba649.pptx",
+    "output_file": "output\\presentations\\presentation_7413105f97be48cda89b68c6b9e6b0da.pptx",
     "slides": [
       {
         "slide_id": 1,
-        "title": "Introduction to Artificial Intelligence",
+        "title": "Introduction to Photosynthesis",
         "bullets": [
-          "AI is a branch of computer science creating intelligent machines.",
-          "Involves developing algorithms for learning, decision-making, and task performance.",
-          "Types of AI: narrow AI (specific tasks) and general AI (any intellectual task).",
-          "AI technologies: machine learning, natural language processing, computer vision, robotics.",
-          "Applications in healthcare, finance, transportation, entertainment."
+          "Photosynthesis is the process of converting light energy into chemical energy.",
+          "It occurs in the chloroplasts of plant cells.",
+          "The equation for photosynthesis is: 6CO2 + 6H2O + light energy \u2192 C6H12O6 + 6O2."
         ],
-        "image_path": "output\\images\\7954ba60578f43ad8ae21ba85405bbf8\\photo-1761223976272-0d6d4bc38636.jpg",
-        "image_url": "https://images.unsplash.com/photo-1761223976272-0d6d4bc38636?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc1OTE2NjN8&ixlib=rb-4.1.0&q=80&w=1080"
-      },
-      {
-        "slide_id": 2,
-        "title": "Types of Artificial Intelligence",
-        "bullets": [
-          "Narrow AI: focuses on specific tasks.",
-          "General AI: capable of performing any intellectual task.",
-          "Narrow AI is more common and practical in current applications.",
-          "General AI is a long-term goal with significant challenges.",
-          "Both types have unique strengths and limitations."
-        ],
-        "image_path": "output\\images\\7954ba60578f43ad8ae21ba85405bbf8\\photo-1744986014553-e5e866de814b.jpg",
-        "image_url": "https://images.unsplash.com/photo-1744986014553-e5e866de814b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc1OTE2NjV8&ixlib=rb-4.1.0&q=80&w=1080"
-      },
-      {
-        "slide_id": 3,
-        "title": "Artificial Intelligence Technologies",
-        "bullets": [
-          "Machine learning: algorithms that learn from data.",
-          "Natural language processing: understanding and generating human language.",
-          "Computer vision: interpreting and analyzing visual information.",
-          "Robotics: physical machines capable of autonomous actions.",
-          "These technologies work together to create intelligent systems."
-        ],
-        "image_path": "output\\images\\7954ba60578f43ad8ae21ba85405bbf8\\photo-1677442136019-21780ecad995.jpg",
-        "image_url": "https://images.unsplash.com/photo-1677442136019-21780ecad995?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc1OTE2NjZ8&ixlib=rb-4.1.0&q=80&w=1080"
-      },
-      {
-        "slide_id": 4,
-        "title": "Applications of Artificial Intelligence",
-        "bullets": [
-          "Healthcare: diagnosis, treatment, personalized medicine.",
-          "Finance: fraud detection, trading algorithms, risk assessment.",
-          "Transportation: autonomous vehicles, traffic optimization.",
-          "Entertainment: recommendation systems, content creation.",
-          "AI is transforming industries and improving efficiency and decision-making."
-        ],
-        "image_path": "output\\images\\7954ba60578f43ad8ae21ba85405bbf8\\photo-1717501219291-29f30b728f86.jpg",
-        "image_url": "https://images.unsplash.com/photo-1717501219291-29f30b728f86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc1OTE2Njh8&ixlib=rb-4.1.0&q=80&w=1080"
-      },
-      {
-        "slide_id": 5,
-        "title": "Ethical Considerations in Artificial Intelligence",
-        "bullets": [
-          "Bias in AI algorithms: reflecting and perpetuating societal biases.",
-          "Impact on the job market: automation of tasks leading to job displacement.",
-          "Privacy concerns: data collection and surveillance.",
-          "Regulation and oversight: ensuring responsible development and deployment.",
-          "Ethical considerations are crucial for the responsible use of AI technologies."
-        ],
-        "image_path": "output\\images\\7954ba60578f43ad8ae21ba85405bbf8\\photo-1717501217875-b5bbe1480a88.jpg",
-        "image_url": "https://images.unsplash.com/photo-1717501217875-b5bbe1480a88?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc1OTE2NzB8&ixlib=rb-4.1.0&q=80&w=1080"
+        "image_path": "output\\images\\be2bac322ad84743aed2cddb301da4c5\\photo-1662906551190-8cb78688bf87.jpg",
+        "image_url": "https://images.unsplash.com/photo-1662906551190-8cb78688bf87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc1OTg1OTd8&ixlib=rb-4.1.0&q=80&w=1080"
       }
     ]
   }

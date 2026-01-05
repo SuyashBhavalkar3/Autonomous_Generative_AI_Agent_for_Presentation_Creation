@@ -52,101 +52,99 @@ def _apply_gamma_theme(prs: Presentation):
 
 
 def build_presentation(slides: list[dict], out_path: Path | str) -> Path:
-	"""Create a Gamma-styled PPTX with given slides schema and save to out_path."""
-	prs = Presentation()
+    """Create PPTX with title, bullets, and images below text, fully working."""
+    prs = Presentation()
+    tmp_dir = Path("output") / "images" / f"ppt_builder_{uuid.uuid4().hex}"
+    blank_layout = prs.slide_layouts[6] if len(prs.slide_layouts) > 6 else prs.slide_layouts[-1]
 
-	# Prepare a temporary image folder for on-demand downloads when slides provide `image_url`
-	tmp_dir = Path("output") / "images" / f"ppt_builder_{uuid.uuid4().hex}"
+    left_margin = Inches(0.5)
+    right_margin = Inches(0.5)
+    bottom_margin = Inches(0.5)
+    top_margin = Inches(0.3)
+    slide_w = prs.slide_width
+    slide_h = prs.slide_height
 
-	# Ensure a blank slide layout exists for image-focused slides
-	blank_layout = prs.slide_layouts[6] if len(prs.slide_layouts) > 6 else prs.slide_layouts[-1]
+    for s in slides:
+        title = s.get("title", "Untitled")
+        bullets = s.get("bullets", [])[:4]
 
-	for s in slides:
-		title = s.get("title", "Untitled")
-		bullets = s.get("bullets", [])[:4]  # minimal bullets
+        # --- Image fetch (working logic from commented version) ---
+        image_path = s.get("image_path")
+        if not image_path:
+            image_url = s.get("image_url")
+            if image_url:
+                try:
+                    _downloaded = download_image(image_url, tmp_dir)
+                    image_path = str(_downloaded) if _downloaded else None
+                except Exception:
+                    image_path = None
 
-		# Support slides that provide either `image_path` (already downloaded)
-		# or `image_url` (download on-demand). Do not duplicate external/image
-		# fetching logic; reuse `download_image` defined above.
-		image_path = s.get("image_path")
-		if not image_path:
-			image_url = s.get("image_url")
-			if image_url:
-				try:
-					_downloaded = download_image(image_url, tmp_dir)
-					image_path = str(_downloaded) if _downloaded else None
-				except Exception:
-					image_path = None
+        # --- Add slide ---
+        slide = prs.slides.add_slide(blank_layout)
 
-		slide = prs.slides.add_slide(blank_layout)
+        # Dark background
+        try:
+            fill = slide.background.fill
+            fill.solid()
+            fill.fore_color.rgb = RGBColor(18, 18, 18)
+        except Exception:
+            pass
 
-		# set dark background
-		try:
-			fill = slide.background.fill
-			fill.solid()
-			fill.fore_color.rgb = RGBColor(18, 18, 18)
-		except Exception:
-			pass
+        # --- Title ---
+        title_height = Inches(1.0)
+        try:
+            title_box = slide.shapes.add_textbox(left_margin, top_margin,
+													slide_w - left_margin - right_margin,
+													title_height)
+            tf = title_box.text_frame
+            tf.clear()
+            p = tf.paragraphs[0]
+            p.text = title
+            p.font.bold = True
+            p.font.size = Pt(28)
+            p.font.color.rgb = RGBColor(255, 255, 255)
+        except Exception:
+            logger.debug("Failed to add title box")
 
-	# Title textbox at top
-		try:
-			left = Inches(0.5)
-			top = Inches(0.2)
-			width = Inches(9)
-			height = Inches(1.0)
-			title_box = slide.shapes.add_textbox(left, top, width, height)
-			tf = title_box.text_frame
-			tf.clear()
-			p = tf.paragraphs[0]
-			p.text = title
-			p.font.bold = True
-			p.font.size = Pt(28)
-			p.font.color.rgb = RGBColor(255, 255, 255)
-		except Exception:
-			logger.debug("Failed to add title box")
+        # --- Bullets ---
+        body_top = top_margin + title_height + Inches(0.2)
+        body_height = Inches(3.0)
+        try:
+            body_box = slide.shapes.add_textbox(left_margin, body_top,
+												slide_w - left_margin - right_margin,
+												body_height)
+            tf = body_box.text_frame
+            tf.clear()
+            for idx, b in enumerate(bullets):
+                p = tf.paragraphs[0] if idx == 0 else tf.add_paragraph()
+                p.text = b
+                p.level = 0
+                p.font.size = Pt(16)
+                p.font.color.rgb = RGBColor(200, 200, 200)
+        except Exception:
+            logger.debug("Failed to add bullets")
 
-		try:
-			left = Inches(0.5)
-			top = Inches(1.4)
-			width = Inches(4.2)
-			height = Inches(4.6)
-			body_box = slide.shapes.add_textbox(left, top, width, height)
-			tf = body_box.text_frame
-			tf.clear()
-			# Use readable font size and color
-			for idx, b in enumerate(bullets):
-				if idx == 0:
-					p = tf.paragraphs[0]
-					p.text = b
-				else:
-					p = tf.add_paragraph()
-					p.text = b
-				p.level = 0
-				p.font.size = Pt(16)
-				p.font.color.rgb = RGBColor(200, 200, 200)
-		except Exception:
-			logger.debug("Failed to add bullets")
+        # --- Image below text (fully working from commented version) ---
+        if image_path:
+            try:
+                img_file = Path(image_path)
+                if img_file.exists() and img_file.stat().st_size > 0:
+                    # Place image just below the text box (body_top + body_height + padding)
+                    pic_left = left_margin
+                    pic_top = body_top + body_height + Inches(0.2)
+                    # Set width to slide width minus margins; aspect ratio preserved
+                    pic_width = slide_w - left_margin - right_margin
+                    slide.shapes.add_picture(str(img_file), pic_left, pic_top, width=pic_width)
+                else:
+                    logger.warning("Image file missing or empty: %s", image_path)
+            except Exception as e:
+                logger.warning("Embedding image failed: %s", e)
 
-		# Large image on the right if available; placed under the title to avoid overlap
-		if image_path:
-			try:
-				pic_left = Inches(5.0)
-				pic_top = Inches(1.2)
-				pic_width = Inches(4.0)
-
-
-
-				# Ensure image fits vertically; allow pptx to preserve aspect ratio by only setting width
-				slide.shapes.add_picture(str(image_path), pic_left, pic_top, width=pic_width)
-			except Exception as e:
-				logger.warning("Embedding image failed: %s", e)
-
-	out = Path(out_path)
-	out.parent.mkdir(parents=True, exist_ok=True)
-	prs.save(str(out))
-	# Apply theme to saved presentation (best-effort; most styling already applied)
-	return out
-
+    # Save PPT
+    out = Path(out_path)
+    out.parent.mkdir(parents=True, exist_ok=True)
+    prs.save(str(out))
+    return out
 
 class PPTBuilder:
 	"""Small wrapper class for compatibility with older tests/code.
