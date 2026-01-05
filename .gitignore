@@ -21,7 +21,6 @@ genAI_env/
 backend/.env
 backend/.env.*
 backend/output/
-backend/output/debug_state.json
 
 # ===============================
 # Databases
