@@ -32,7 +32,7 @@ class GeneratePPTRequest(BaseModel):
     num_slides: int = Field(5, ge=1, le=14)
 
 
-@app.post("/generate_ppt")
+@app.post("/generate_ppt", dependencies=[Depends(get_current_user)])
 async def generate_ppt(req: GeneratePPTRequest, request: Request):
     """
     Endpoint that accepts:

@@ -1,141 +1,121 @@
 {
-  "goal": "Introduction To Artificial Intelligence",
+  "goal": "Artificial Intelligence",
   "num_slides": 5,
-  "research_agent": "- Artificial Intelligence (AI) is the simulation of human intelligence processes by machines.\n- AI involves the development of algorithms that can perform tasks that typically require human intelligence, such as visual perception, speech recognition, decision-making, and language translation.\n- AI has various applications across industries, including healthcare, finance, transportation, and entertainment.\n- There are different types of AI, including narrow AI (focused on a specific task) and general AI (possessing human-like intelligence).\n- AI technologies include machine learning, neural networks, natural language processing, and computer vision.\n- Ethical considerations, such as bias in AI algorithms and job displacement, are important factors to consider in the development and deployment of AI technologies.",
-  "content_agent": "1. Introduction to Artificial Intelligence\n- AI simulates human intelligence processes\n- Involves algorithms for tasks like visual perception, decision-making\n- Applications in healthcare, finance, transportation, entertainment\n- Types: narrow AI (specific task) and general AI (human-like intelligence)\n- Technologies: machine learning, neural networks, natural language processing, computer vision\n\n2. Applications of Artificial Intelligence\n- Healthcare: diagnosis, personalized treatment\n- Finance: fraud detection, trading algorithms\n- Transportation: autonomous vehicles, traffic optimization\n- Entertainment: recommendation systems, content creation\n- AI is revolutionizing various industries with its applications\n\n3. Types of Artificial Intelligence\n- Narrow AI: focused on specific tasks\n- General AI: possesses human-like intelligence\n- Narrow AI is more common and practical currently\n- General AI is a long-term goal for researchers\n- Both types have their unique challenges and opportunities\n\n4. Ethical Considerations in Artificial Intelligence\n- Bias in AI algorithms: can perpetuate discrimination\n- Job displacement: automation of tasks can lead to unemployment\n- Privacy concerns: data collection and surveillance\n- Transparency and accountability: ensuring AI decisions are explainable\n- Ethical considerations are crucial in the development and deployment of AI technologies\n\n5. Future of Artificial Intelligence\n- Continued advancements in AI technologies\n- Integration of AI into more aspects of daily life\n- Ethical guidelines and regulations to address concerns\n- Collaboration between researchers, policymakers, and industry\n- AI has the potential to transform society positively with responsible development",
+  "research_agent": "- Artificial Intelligence (AI) is the simulation of human intelligence processes by machines.\n- It encompasses tasks such as learning, reasoning, problem-solving, perception, and language understanding.\n- AI is used in various industries, including healthcare, finance, transportation, and entertainment.\n- Machine learning, a subset of AI, involves training algorithms to learn from data and make predictions or decisions.\n- Deep learning, another subset of AI, uses neural networks to mimic the human brain's structure and function.\n- Ethical concerns surrounding AI include job displacement, bias in algorithms, and privacy issues.\n- The future of AI includes advancements in robotics, natural language processing, and autonomous vehicles.",
+  "content_agent": "1. Introduction to Artificial Intelligence\n- Artificial Intelligence (AI) simulates human intelligence processes by machines.\n- Tasks include learning, reasoning, problem-solving, perception, and language understanding.\n- Widely used across industries such as healthcare, finance, transportation, and entertainment.\n\n2. Machine Learning in AI\n- Machine learning is a subset of AI that involves training algorithms to learn from data.\n- Algorithms can make predictions or decisions based on the data they are trained on.\n- It is a key component of AI applications and technologies.\n\n3. Deep Learning in AI\n- Deep learning is another subset of AI that uses neural networks to mimic the human brain.\n- Neural networks are structured to process data and learn patterns, similar to how the human brain functions.\n- Deep learning is used in image recognition, speech recognition, and natural language processing.\n\n4. Ethical Concerns in AI\n- Ethical concerns surrounding AI include job displacement due to automation.\n- Bias in algorithms can lead to unfair outcomes and discrimination.\n- Privacy issues arise from the collection and use of personal data in AI systems.\n\n5. Future of AI\n- The future of AI includes advancements in robotics, enabling more complex tasks to be automated.\n- Natural language processing will continue to improve, making human-machine interactions more seamless.\n- Autonomous vehicles are a key area of development, with AI playing a crucial role in their operation and decision-making processes.",
   "image_agent": {
-    "slide_1": "https://images.unsplash.com/photo-1762330467572-5199bc772a20?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDI5NDB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "slide_2": "https://images.unsplash.com/photo-1717501218424-b4724c7882bd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDI5NDF8&ixlib=rb-4.1.0&q=80&w=1080",
-    "slide_3": "https://images.unsplash.com/photo-1718241905559-f76f2718ddc1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDI5NDN8&ixlib=rb-4.1.0&q=80&w=1080",
-    "slide_4": "https://images.unsplash.com/photo-1659177443478-888263868238?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDI5NDZ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "slide_5": "https://images.unsplash.com/photo-1666597107756-ef489e9f1f09?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDI5NDh8&ixlib=rb-4.1.0&q=80&w=1080"
+    "slide_1": "https://images.unsplash.com/photo-1739054729987-4b3c60f072a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDM3Mzd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "slide_2": "https://images.unsplash.com/photo-1727434032773-af3cd98375ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDM3Mzl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "slide_3": "https://images.unsplash.com/photo-1758685845882-288eee8e913e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDM3NDN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "slide_4": "https://images.unsplash.com/photo-1675557570482-df9926f61d86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDM3NDV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "slide_5": "https://images.unsplash.com/photo-1588710253044-1e87020ebfb5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDM3NDl8&ixlib=rb-4.1.0&q=80&w=1080"
   },
   "slide_agent": {
     "slides": [
       {
         "title": "Introduction to Artificial Intelligence",
         "bullets": [
-          "AI simulates human intelligence processes",
-          "Involves algorithms for tasks like visual perception, decision-making",
-          "Applications in healthcare, finance, transportation, entertainment",
-          "Types: narrow AI (specific task) and general AI (human-like intelligence)",
-          "Technologies: machine learning, neural networks, natural language processing, computer vision"
+          "Artificial Intelligence (AI) simulates human intelligence processes by machines.",
+          "Tasks include learning, reasoning, problem-solving, perception, and language understanding.",
+          "Widely used across industries such as healthcare, finance, transportation, and entertainment."
         ],
-        "image_url": "https://images.unsplash.com/photo-1762330467572-5199bc772a20?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDI5NDB8&ixlib=rb-4.1.0&q=80&w=1080"
+        "image_url": "https://images.unsplash.com/photo-1739054729987-4b3c60f072a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDM3Mzd8&ixlib=rb-4.1.0&q=80&w=1080"
       },
       {
-        "title": "Applications of Artificial Intelligence",
+        "title": "Machine Learning in AI",
         "bullets": [
-          "Healthcare: diagnosis, personalized treatment",
-          "Finance: fraud detection, trading algorithms",
-          "Transportation: autonomous vehicles, traffic optimization",
-          "Entertainment: recommendation systems, content creation",
-          "AI is revolutionizing various industries with its applications"
+          "Machine learning is a subset of AI that involves training algorithms to learn from data.",
+          "Algorithms can make predictions or decisions based on the data they are trained on.",
+          "It is a key component of AI applications and technologies."
         ],
-        "image_url": "https://images.unsplash.com/photo-1717501218424-b4724c7882bd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDI5NDF8&ixlib=rb-4.1.0&q=80&w=1080"
+        "image_url": "https://images.unsplash.com/photo-1727434032773-af3cd98375ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDM3Mzl8&ixlib=rb-4.1.0&q=80&w=1080"
       },
       {
-        "title": "Types of Artificial Intelligence",
+        "title": "Deep Learning in AI",
         "bullets": [
-          "Narrow AI: focused on specific tasks",
-          "General AI: possesses human-like intelligence",
-          "Narrow AI is more common and practical currently",
-          "General AI is a long-term goal for researchers",
-          "Both types have their unique challenges and opportunities"
+          "Deep learning is another subset of AI that uses neural networks to mimic the human brain.",
+          "Neural networks are structured to process data and learn patterns, similar to how the human brain functions.",
+          "Deep learning is used in image recognition, speech recognition, and natural language processing."
         ],
-        "image_url": "https://images.unsplash.com/photo-1718241905559-f76f2718ddc1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDI5NDN8&ixlib=rb-4.1.0&q=80&w=1080"
+        "image_url": "https://images.unsplash.com/photo-1758685845882-288eee8e913e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDM3NDN8&ixlib=rb-4.1.0&q=80&w=1080"
       },
       {
-        "title": "Ethical Considerations in Artificial Intelligence",
+        "title": "Ethical Concerns in AI",
         "bullets": [
-          "Bias in AI algorithms: can perpetuate discrimination",
-          "Job displacement: automation of tasks can lead to unemployment",
-          "Privacy concerns: data collection and surveillance",
-          "Transparency and accountability: ensuring AI decisions are explainable",
-          "Ethical considerations are crucial in the development and deployment of AI technologies"
+          "Ethical concerns surrounding AI include job displacement due to automation.",
+          "Bias in algorithms can lead to unfair outcomes and discrimination.",
+          "Privacy issues arise from the collection and use of personal data in AI systems."
         ],
-        "image_url": "https://images.unsplash.com/photo-1659177443478-888263868238?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDI5NDZ8&ixlib=rb-4.1.0&q=80&w=1080"
+        "image_url": "https://images.unsplash.com/photo-1675557570482-df9926f61d86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDM3NDV8&ixlib=rb-4.1.0&q=80&w=1080"
       },
       {
-        "title": "Future of Artificial Intelligence",
+        "title": "Future of AI",
         "bullets": [
-          "Continued advancements in AI technologies",
-          "Integration of AI into more aspects of daily life",
-          "Ethical guidelines and regulations to address concerns",
-          "Collaboration between researchers, policymakers, and industry",
-          "AI has the potential to transform society positively with responsible development"
+          "The future of AI includes advancements in robotics, enabling more complex tasks to be automated.",
+          "Natural language processing will continue to improve, making human-machine interactions more seamless.",
+          "Autonomous vehicles are a key area of development, with AI playing a crucial role in their operation and decision-making processes."
         ],
-        "image_url": "https://images.unsplash.com/photo-1666597107756-ef489e9f1f09?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDI5NDh8&ixlib=rb-4.1.0&q=80&w=1080"
+        "image_url": "https://images.unsplash.com/photo-1588710253044-1e87020ebfb5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDM3NDl8&ixlib=rb-4.1.0&q=80&w=1080"
       }
     ]
   },
   "executor_agent": {
-    "output_file": "output\\presentations\\presentation_6b18016d1cc747a8bbed448a2c491bf6.pptx",
+    "output_file": "output\\presentations\\presentation_938102858e60476ba6fb8879d8d571b6.pptx",
     "slides": [
       {
         "slide_id": 1,
         "title": "Introduction to Artificial Intelligence",
         "bullets": [
-          "AI simulates human intelligence processes",
-          "Involves algorithms for tasks like visual perception, decision-making",
-          "Applications in healthcare, finance, transportation, entertainment",
-          "Types: narrow AI (specific task) and general AI (human-like intelligence)",
-          "Technologies: machine learning, neural networks, natural language processing, computer vision"
+          "Artificial Intelligence (AI) simulates human intelligence processes by machines.",
+          "Tasks include learning, reasoning, problem-solving, perception, and language understanding.",
+          "Widely used across industries such as healthcare, finance, transportation, and entertainment."
         ],
-        "image_path": "output\\images\\533fcd9a056d4ee2acd43ac2585e9a0e\\photo-1762330467572-5199bc772a20.jpg",
-        "image_url": "https://images.unsplash.com/photo-1762330467572-5199bc772a20?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDI5NDB8&ixlib=rb-4.1.0&q=80&w=1080"
+        "image_path": "output\\images\\65e43498d457446d9377d2bd6986f068\\photo-1739054729987-4b3c60f072a2.jpg",
+        "image_url": "https://images.unsplash.com/photo-1739054729987-4b3c60f072a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDM3Mzd8&ixlib=rb-4.1.0&q=80&w=1080"
       },
       {
         "slide_id": 2,
-        "title": "Applications of Artificial Intelligence",
+        "title": "Machine Learning in AI",
         "bullets": [
-          "Healthcare: diagnosis, personalized treatment",
-          "Finance: fraud detection, trading algorithms",
-          "Transportation: autonomous vehicles, traffic optimization",
-          "Entertainment: recommendation systems, content creation",
-          "AI is revolutionizing various industries with its applications"
+          "Machine learning is a subset of AI that involves training algorithms to learn from data.",
+          "Algorithms can make predictions or decisions based on the data they are trained on.",
+          "It is a key component of AI applications and technologies."
         ],
-        "image_path": "output\\images\\533fcd9a056d4ee2acd43ac2585e9a0e\\photo-1717501218424-b4724c7882bd.jpg",
-        "image_url": "https://images.unsplash.com/photo-1717501218424-b4724c7882bd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDI5NDF8&ixlib=rb-4.1.0&q=80&w=1080"
+        "image_path": "output\\images\\65e43498d457446d9377d2bd6986f068\\photo-1727434032773-af3cd98375ba.jpg",
+        "image_url": "https://images.unsplash.com/photo-1727434032773-af3cd98375ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDM3Mzl8&ixlib=rb-4.1.0&q=80&w=1080"
       },
       {
         "slide_id": 3,
-        "title": "Types of Artificial Intelligence",
+        "title": "Deep Learning in AI",
         "bullets": [
-          "Narrow AI: focused on specific tasks",
-          "General AI: possesses human-like intelligence",
-          "Narrow AI is more common and practical currently",
-          "General AI is a long-term goal for researchers",
-          "Both types have their unique challenges and opportunities"
+          "Deep learning is another subset of AI that uses neural networks to mimic the human brain.",
+          "Neural networks are structured to process data and learn patterns, similar to how the human brain functions.",
+          "Deep learning is used in image recognition, speech recognition, and natural language processing."
         ],
-        "image_path": "output\\images\\533fcd9a056d4ee2acd43ac2585e9a0e\\photo-1718241905559-f76f2718ddc1.jpg",
-        "image_url": "https://images.unsplash.com/photo-1718241905559-f76f2718ddc1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDI5NDN8&ixlib=rb-4.1.0&q=80&w=1080"
+        "image_path": "output\\images\\65e43498d457446d9377d2bd6986f068\\photo-1758685845882-288eee8e913e.jpg",
+        "image_url": "https://images.unsplash.com/photo-1758685845882-288eee8e913e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDM3NDN8&ixlib=rb-4.1.0&q=80&w=1080"
       },
       {
         "slide_id": 4,
-        "title": "Ethical Considerations in Artificial Intelligence",
+        "title": "Ethical Concerns in AI",
         "bullets": [
-          "Bias in AI algorithms: can perpetuate discrimination",
-          "Job displacement: automation of tasks can lead to unemployment",
-          "Privacy concerns: data collection and surveillance",
-          "Transparency and accountability: ensuring AI decisions are explainable",
-          "Ethical considerations are crucial in the development and deployment of AI technologies"
+          "Ethical concerns surrounding AI include job displacement due to automation.",
+          "Bias in algorithms can lead to unfair outcomes and discrimination.",
+          "Privacy issues arise from the collection and use of personal data in AI systems."
         ],
-        "image_path": "output\\images\\533fcd9a056d4ee2acd43ac2585e9a0e\\photo-1659177443478-888263868238.jpg",
-        "image_url": "https://images.unsplash.com/photo-1659177443478-888263868238?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDI5NDZ8&ixlib=rb-4.1.0&q=80&w=1080"
+        "image_path": "output\\images\\65e43498d457446d9377d2bd6986f068\\photo-1675557570482-df9926f61d86.jpg",
+        "image_url": "https://images.unsplash.com/photo-1675557570482-df9926f61d86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDM3NDV8&ixlib=rb-4.1.0&q=80&w=1080"
       },
       {
         "slide_id": 5,
-        "title": "Future of Artificial Intelligence",
+        "title": "Future of AI",
         "bullets": [
-          "Continued advancements in AI technologies",
-          "Integration of AI into more aspects of daily life",
-          "Ethical guidelines and regulations to address concerns",
-          "Collaboration between researchers, policymakers, and industry",
-          "AI has the potential to transform society positively with responsible development"
+          "The future of AI includes advancements in robotics, enabling more complex tasks to be automated.",
+          "Natural language processing will continue to improve, making human-machine interactions more seamless.",
+          "Autonomous vehicles are a key area of development, with AI playing a crucial role in their operation and decision-making processes."
         ],
-        "image_path": "output\\images\\533fcd9a056d4ee2acd43ac2585e9a0e\\photo-1666597107756-ef489e9f1f09.jpg",
-        "image_url": "https://images.unsplash.com/photo-1666597107756-ef489e9f1f09?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDI5NDh8&ixlib=rb-4.1.0&q=80&w=1080"
+        "image_path": "output\\images\\65e43498d457446d9377d2bd6986f068\\photo-1588710253044-1e87020ebfb5.jpg",
+        "image_url": "https://images.unsplash.com/photo-1588710253044-1e87020ebfb5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDM3NDl8&ixlib=rb-4.1.0&q=80&w=1080"
       }
     ]
   }
