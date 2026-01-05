@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from agents.planner.routes import router as planner_router
 from agents.executor.routes import router as executor_router
+from auth.routes import router as auth_router
 from agents.planner.planner_agent import PlannerAgent
 from agents.executor.executor_agent import GraphExecutor
 from fastapi import HTTPException, Request
@@ -22,6 +23,7 @@ app = FastAPI(
 # Include routers
 app.include_router(planner_router)
 app.include_router(executor_router)
+app.include_router(auth_router)
 
 
 class GeneratePPTRequest(BaseModel):
