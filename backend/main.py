@@ -8,7 +8,8 @@ from fastapi import HTTPException, Request
 from pydantic import BaseModel, Field
 import os
 import uuid
-
+from auth.dependencies import get_current_user
+from fastapi import Depends
 
 
 # If you have auth middleware, import it here
@@ -21,9 +22,9 @@ app = FastAPI(
 )
 
 # Include routers
-app.include_router(planner_router)
-app.include_router(executor_router)
 app.include_router(auth_router)
+app.include_router(planner_router, dependencies=[Depends(get_current_user)])
+app.include_router(executor_router, dependencies=[Depends(get_current_user)])
 
 
 class GeneratePPTRequest(BaseModel):
