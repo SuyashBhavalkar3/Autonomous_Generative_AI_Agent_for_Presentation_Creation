@@ -1,129 +1,121 @@
 {
   "goal": "Presentation On Artificial Intelligence In HealthCare",
   "num_slides": 5,
-  "research_agent": "- Artificial intelligence (AI) is revolutionizing healthcare by improving diagnosis, treatment, and patient outcomes.\n- AI algorithms can analyze medical images, predict patient outcomes, and personalize treatment plans.\n- AI-powered tools can assist healthcare professionals in making more accurate and timely decisions.\n- AI in healthcare can reduce medical errors, improve efficiency, and lower costs.\n- Challenges include data privacy concerns, regulatory hurdles, and ethical considerations.\n- Continued research and collaboration are needed to fully realize the potential of AI in healthcare.",
-  "content_agent": "1. Introduction to Artificial Intelligence in Healthcare\n- AI revolutionizing healthcare\n- Improving diagnosis, treatment, and patient outcomes\n- Importance of AI algorithms in medical field\n\n2. Applications of AI in Healthcare\n- Analyzing medical images\n- Predicting patient outcomes\n- Personalizing treatment plans\n- Assisting healthcare professionals in decision-making\n\n3. Benefits of AI in Healthcare\n- Reducing medical errors\n- Improving efficiency\n- Lowering costs\n- Enhancing patient care and outcomes\n\n4. Challenges in Implementing AI in Healthcare\n- Data privacy concerns\n- Regulatory hurdles\n- Ethical considerations\n- Ensuring patient safety and trust\n\n5. Future of AI in Healthcare\n- Need for continued research and collaboration\n- Realizing the full potential of AI in healthcare\n- Advancements in technology and AI applications\n- Improving healthcare delivery and outcomes",
+  "research_agent": "- Artificial intelligence (AI) is revolutionizing healthcare by improving diagnosis accuracy, treatment effectiveness, and patient outcomes.\n- AI algorithms can analyze large amounts of medical data to identify patterns and make predictions, leading to faster and more accurate diagnoses.\n- AI-powered tools such as chatbots and virtual assistants can provide personalized healthcare recommendations and support to patients.\n- AI can also streamline administrative tasks, reduce healthcare costs, and improve overall efficiency in healthcare systems.\n- Despite the benefits, there are ethical considerations surrounding AI in healthcare, including data privacy, bias in algorithms, and the potential for job displacement.",
+  "content_agent": "1. The Impact of Artificial Intelligence in Healthcare\n- AI improves diagnosis accuracy, treatment effectiveness, and patient outcomes.\n- AI algorithms analyze medical data to identify patterns and make predictions for faster diagnoses.\n- AI tools like chatbots offer personalized healthcare recommendations and support to patients.\n\n2. Enhancing Efficiency in Healthcare with AI\n- AI streamlines administrative tasks and reduces healthcare costs.\n- AI improves overall efficiency in healthcare systems.\n- AI-powered tools can automate repetitive tasks and free up healthcare professionals' time.\n\n3. Ethical Considerations in AI Healthcare\n- Data privacy is a concern with AI in healthcare.\n- Bias in algorithms can lead to inaccurate diagnoses or treatment recommendations.\n- Job displacement is a potential issue as AI takes over certain tasks traditionally done by humans.\n\n4. Future Trends in AI Healthcare\n- AI is expected to continue revolutionizing healthcare with advancements in diagnostics and treatment.\n- AI will play a crucial role in personalized medicine and precision healthcare.\n- AI-driven technologies like robotics and telemedicine will further transform the healthcare industry.\n\n5. Implementing AI in Healthcare\n- Collaboration between healthcare providers and AI developers is essential for successful implementation.\n- Training healthcare professionals on AI tools and technologies is crucial.\n- Regular monitoring and evaluation of AI systems are necessary to ensure accuracy and effectiveness.",
   "image_agent": {
-    "slide_1": "https://images.unsplash.com/photo-1531747118685-ca8fa6e08806?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDA3NDh8&ixlib=rb-4.1.0&q=80&w=1080",
-    "slide_2": "https://images.unsplash.com/photo-1758691461932-d0aa0ebf6b31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDA3NTB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "slide_3": "https://images.unsplash.com/photo-1758691463607-c1220b77aaaa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDA3NTJ8&ixlib=rb-4.1.0&q=80&w=1080",
-    "slide_4": "https://images.unsplash.com/photo-1594070412366-e44954acbc3b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDA3NTV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "slide_5": "https://images.unsplash.com/photo-1766299892549-b56b257d1ddd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDA3NTd8&ixlib=rb-4.1.0&q=80&w=1080"
+    "slide_1": "https://images.unsplash.com/photo-1718128120354-049b29ac88ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDA5MDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "slide_2": "https://images.unsplash.com/photo-1623915695133-d624f7759fd0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDA5MDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "slide_3": "https://images.unsplash.com/photo-1706065264583-55f1a8549769?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDA5MDh8&ixlib=rb-4.1.0&q=80&w=1080",
+    "slide_4": "https://images.unsplash.com/photo-1610703120046-e9cd1dfbbe32?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDA5MTF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "slide_5": "https://images.unsplash.com/photo-1695048441317-9b45bb726103?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDA5MTN8&ixlib=rb-4.1.0&q=80&w=1080"
   },
   "slide_agent": {
     "slides": [
       {
-        "title": "Introduction to Artificial Intelligence in Healthcare",
+        "title": "The Impact of Artificial Intelligence in Healthcare",
         "bullets": [
-          "AI revolutionizing healthcare",
-          "Improving diagnosis, treatment, and patient outcomes",
-          "Importance of AI algorithms in medical field"
+          "AI improves diagnosis accuracy, treatment effectiveness, and patient outcomes.",
+          "AI algorithms analyze medical data to identify patterns and make predictions for faster diagnoses.",
+          "AI tools like chatbots offer personalized healthcare recommendations and support to patients."
         ],
-        "image_url": "https://images.unsplash.com/photo-1531747118685-ca8fa6e08806?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDA3NDh8&ixlib=rb-4.1.0&q=80&w=1080"
+        "image_url": "https://images.unsplash.com/photo-1718128120354-049b29ac88ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDA5MDR8&ixlib=rb-4.1.0&q=80&w=1080"
       },
       {
-        "title": "Applications of AI in Healthcare",
+        "title": "Enhancing Efficiency in Healthcare with AI",
         "bullets": [
-          "Analyzing medical images",
-          "Predicting patient outcomes",
-          "Personalizing treatment plans",
-          "Assisting healthcare professionals in decision-making"
+          "AI streamlines administrative tasks and reduces healthcare costs.",
+          "AI improves overall efficiency in healthcare systems.",
+          "AI-powered tools can automate repetitive tasks and free up healthcare professionals' time."
         ],
-        "image_url": "https://images.unsplash.com/photo-1758691461932-d0aa0ebf6b31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDA3NTB8&ixlib=rb-4.1.0&q=80&w=1080"
+        "image_url": "https://images.unsplash.com/photo-1623915695133-d624f7759fd0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDA5MDZ8&ixlib=rb-4.1.0&q=80&w=1080"
       },
       {
-        "title": "Benefits of AI in Healthcare",
+        "title": "Ethical Considerations in AI Healthcare",
         "bullets": [
-          "Reducing medical errors",
-          "Improving efficiency",
-          "Lowering costs",
-          "Enhancing patient care and outcomes"
+          "Data privacy is a concern with AI in healthcare.",
+          "Bias in algorithms can lead to inaccurate diagnoses or treatment recommendations.",
+          "Job displacement is a potential issue as AI takes over certain tasks traditionally done by humans."
         ],
-        "image_url": "https://images.unsplash.com/photo-1758691463607-c1220b77aaaa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDA3NTJ8&ixlib=rb-4.1.0&q=80&w=1080"
+        "image_url": "https://images.unsplash.com/photo-1706065264583-55f1a8549769?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDA5MDh8&ixlib=rb-4.1.0&q=80&w=1080"
       },
       {
-        "title": "Challenges in Implementing AI in Healthcare",
+        "title": "Future Trends in AI Healthcare",
         "bullets": [
-          "Data privacy concerns",
-          "Regulatory hurdles",
-          "Ethical considerations",
-          "Ensuring patient safety and trust"
+          "AI is expected to continue revolutionizing healthcare with advancements in diagnostics and treatment.",
+          "AI will play a crucial role in personalized medicine and precision healthcare.",
+          "AI-driven technologies like robotics and telemedicine will further transform the healthcare industry."
         ],
-        "image_url": "https://images.unsplash.com/photo-1594070412366-e44954acbc3b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDA3NTV8&ixlib=rb-4.1.0&q=80&w=1080"
+        "image_url": "https://images.unsplash.com/photo-1610703120046-e9cd1dfbbe32?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDA5MTF8&ixlib=rb-4.1.0&q=80&w=1080"
       },
       {
-        "title": "Future of AI in Healthcare",
+        "title": "Implementing AI in Healthcare",
         "bullets": [
-          "Need for continued research and collaboration",
-          "Realizing the full potential of AI in healthcare",
-          "Advancements in technology and AI applications",
-          "Improving healthcare delivery and outcomes"
+          "Collaboration between healthcare providers and AI developers is essential for successful implementation.",
+          "Training healthcare professionals on AI tools and technologies is crucial.",
+          "Regular monitoring and evaluation of AI systems are necessary to ensure accuracy and effectiveness."
         ],
-        "image_url": "https://images.unsplash.com/photo-1766299892549-b56b257d1ddd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDA3NTd8&ixlib=rb-4.1.0&q=80&w=1080"
+        "image_url": "https://images.unsplash.com/photo-1695048441317-9b45bb726103?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDA5MTN8&ixlib=rb-4.1.0&q=80&w=1080"
       }
     ]
   },
   "executor_agent": {
-    "output_file": "output\\presentations\\presentation_275dce7769a84a1f80fc02aa0be739b2.pptx",
+    "output_file": "output\\presentations\\presentation_fb365617dcf54f8b9fb61a573e820257.pptx",
     "slides": [
       {
         "slide_id": 1,
-        "title": "Introduction to Artificial Intelligence in Healthcare",
+        "title": "The Impact of Artificial Intelligence in Healthcare",
         "bullets": [
-          "AI revolutionizing healthcare",
-          "Improving diagnosis, treatment, and patient outcomes",
-          "Importance of AI algorithms in medical field"
+          "AI improves diagnosis accuracy, treatment effectiveness, and patient outcomes.",
+          "AI algorithms analyze medical data to identify patterns and make predictions for faster diagnoses.",
+          "AI tools like chatbots offer personalized healthcare recommendations and support to patients."
         ],
-        "image_path": "output\\images\\d90d21a6ecdf47ec84acd081f9ca6aa6\\photo-1531747118685-ca8fa6e08806.jpg",
-        "image_url": "https://images.unsplash.com/photo-1531747118685-ca8fa6e08806?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDA3NDh8&ixlib=rb-4.1.0&q=80&w=1080"
+        "image_path": "output\\images\\517d99a8c7a047828b603fca5aa36cd9\\photo-1718128120354-049b29ac88ed.jpg",
+        "image_url": "https://images.unsplash.com/photo-1718128120354-049b29ac88ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDA5MDR8&ixlib=rb-4.1.0&q=80&w=1080"
       },
       {
         "slide_id": 2,
-        "title": "Applications of AI in Healthcare",
+        "title": "Enhancing Efficiency in Healthcare with AI",
         "bullets": [
-          "Analyzing medical images",
-          "Predicting patient outcomes",
-          "Personalizing treatment plans",
-          "Assisting healthcare professionals in decision-making"
+          "AI streamlines administrative tasks and reduces healthcare costs.",
+          "AI improves overall efficiency in healthcare systems.",
+          "AI-powered tools can automate repetitive tasks and free up healthcare professionals' time."
         ],
-        "image_path": "output\\images\\d90d21a6ecdf47ec84acd081f9ca6aa6\\photo-1758691461932-d0aa0ebf6b31.jpg",
-        "image_url": "https://images.unsplash.com/photo-1758691461932-d0aa0ebf6b31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDA3NTB8&ixlib=rb-4.1.0&q=80&w=1080"
+        "image_path": "output\\images\\517d99a8c7a047828b603fca5aa36cd9\\photo-1623915695133-d624f7759fd0.jpg",
+        "image_url": "https://images.unsplash.com/photo-1623915695133-d624f7759fd0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDA5MDZ8&ixlib=rb-4.1.0&q=80&w=1080"
       },
       {
         "slide_id": 3,
-        "title": "Benefits of AI in Healthcare",
+        "title": "Ethical Considerations in AI Healthcare",
         "bullets": [
-          "Reducing medical errors",
-          "Improving efficiency",
-          "Lowering costs",
-          "Enhancing patient care and outcomes"
+          "Data privacy is a concern with AI in healthcare.",
+          "Bias in algorithms can lead to inaccurate diagnoses or treatment recommendations.",
+          "Job displacement is a potential issue as AI takes over certain tasks traditionally done by humans."
         ],
-        "image_path": "output\\images\\d90d21a6ecdf47ec84acd081f9ca6aa6\\photo-1758691463607-c1220b77aaaa.jpg",
-        "image_url": "https://images.unsplash.com/photo-1758691463607-c1220b77aaaa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDA3NTJ8&ixlib=rb-4.1.0&q=80&w=1080"
+        "image_path": "output\\images\\517d99a8c7a047828b603fca5aa36cd9\\photo-1706065264583-55f1a8549769.jpg",
+        "image_url": "https://images.unsplash.com/photo-1706065264583-55f1a8549769?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDA5MDh8&ixlib=rb-4.1.0&q=80&w=1080"
       },
       {
         "slide_id": 4,
-        "title": "Challenges in Implementing AI in Healthcare",
+        "title": "Future Trends in AI Healthcare",
         "bullets": [
-          "Data privacy concerns",
-          "Regulatory hurdles",
-          "Ethical considerations",
-          "Ensuring patient safety and trust"
+          "AI is expected to continue revolutionizing healthcare with advancements in diagnostics and treatment.",
+          "AI will play a crucial role in personalized medicine and precision healthcare.",
+          "AI-driven technologies like robotics and telemedicine will further transform the healthcare industry."
         ],
-        "image_path": "output\\images\\d90d21a6ecdf47ec84acd081f9ca6aa6\\photo-1594070412366-e44954acbc3b.jpg",
-        "image_url": "https://images.unsplash.com/photo-1594070412366-e44954acbc3b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDA3NTV8&ixlib=rb-4.1.0&q=80&w=1080"
+        "image_path": "output\\images\\517d99a8c7a047828b603fca5aa36cd9\\photo-1610703120046-e9cd1dfbbe32.jpg",
+        "image_url": "https://images.unsplash.com/photo-1610703120046-e9cd1dfbbe32?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDA5MTF8&ixlib=rb-4.1.0&q=80&w=1080"
       },
       {
         "slide_id": 5,
-        "title": "Future of AI in Healthcare",
+        "title": "Implementing AI in Healthcare",
         "bullets": [
-          "Need for continued research and collaboration",
-          "Realizing the full potential of AI in healthcare",
-          "Advancements in technology and AI applications",
-          "Improving healthcare delivery and outcomes"
+          "Collaboration between healthcare providers and AI developers is essential for successful implementation.",
+          "Training healthcare professionals on AI tools and technologies is crucial.",
+          "Regular monitoring and evaluation of AI systems are necessary to ensure accuracy and effectiveness."
         ],
-        "image_path": "output\\images\\d90d21a6ecdf47ec84acd081f9ca6aa6\\photo-1766299892549-b56b257d1ddd.jpg",
-        "image_url": "https://images.unsplash.com/photo-1766299892549-b56b257d1ddd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDA3NTd8&ixlib=rb-4.1.0&q=80&w=1080"
+        "image_path": "output\\images\\517d99a8c7a047828b603fca5aa36cd9\\photo-1695048441317-9b45bb726103.jpg",
+        "image_url": "https://images.unsplash.com/photo-1695048441317-9b45bb726103?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDA5MTN8&ixlib=rb-4.1.0&q=80&w=1080"
       }
     ]
   }
