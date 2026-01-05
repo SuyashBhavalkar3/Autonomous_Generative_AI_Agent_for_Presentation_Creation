@@ -129,16 +129,51 @@ def build_presentation(slides: list[dict], out_path: Path | str) -> Path:
             try:
                 img_file = Path(image_path)
                 if img_file.exists() and img_file.stat().st_size > 0:
-                    # Place image just below the text box (body_top + body_height + padding)
-                    pic_left = left_margin
+                    from PIL import Image
+
+                    with Image.open(img_file) as im:
+                        orig_w, orig_h = im.size
+
+                    aspect_ratio = orig_w / orig_h
+
+                    # Max image height = 1/4 slide
+                    max_height = slide_h * 0.25
+                    pic_height = max_height
+                    pic_width = pic_height * aspect_ratio
+
+                    # Fit width if needed
+                    max_width = slide_w - left_margin - right_margin
+                    if pic_width > max_width:
+                        pic_width = max_width
+                        pic_height = pic_width / aspect_ratio
+
+                    # Center horizontally
+                    pic_left = (slide_w - pic_width) / 2
+
+                    # Place below bullets
                     pic_top = body_top + body_height + Inches(0.2)
-                    # Set width to slide width minus margins; aspect ratio preserved
-                    pic_width = slide_w - left_margin - right_margin
-                    slide.shapes.add_picture(str(img_file), pic_left, pic_top, width=pic_width)
+
+                    # 🔑 Clamp vertically so image NEVER goes off-slide
+                    max_bottom = slide_h - bottom_margin
+                    if pic_top + pic_height > max_bottom:
+                        pic_height = max_bottom - pic_top
+                        pic_width = pic_height * aspect_ratio
+                        pic_left = (slide_w - pic_width) / 2
+
+                    # Final safety check
+                    if pic_height > 0 and pic_width > 0:
+                        slide.shapes.add_picture(
+                            str(img_file),
+                            pic_left,
+                            pic_top,
+                            width=int(pic_width),
+                            height=int(pic_height),
+                        )
                 else:
                     logger.warning("Image file missing or empty: %s", image_path)
             except Exception as e:
                 logger.warning("Embedding image failed: %s", e)
+
 
     # Save PPT
     out = Path(out_path)
