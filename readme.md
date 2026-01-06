@@ -41,154 +41,116 @@ Users can sign up, log in (including via **Google OAuth**), submit a topic or pr
 * **SQLAlchemy**
 * **OAuth 2.0 (Google Authentication)**
 * **JWT**
+# Autonomous Generative AI Agent for Presentation Creation
 
-### AI
+This repository contains a full-stack prototype that generates presentation slides (PowerPoint) from a user prompt using AI agents. The project is split into two main parts:
 
-* **Generative AI / LLMs** (OpenAI / compatible models)
+- `backend/` — FastAPI service that runs agents, handles authentication, generates slides and builds PPTX files.
+- `frontend/` — Vite + React TypeScript app that provides a UI for signup/login and generating/downloading presentations.
 
-### Tools
+This README documents how to run each part, environment variables, key files, and debugging notes.
 
-* Postman / cURL for API testing
-* Git & GitHub for version control
+## Quick start (recommended)
 
----
-
-## 📂 Project Structure
-
-```
-backend/
-│── auth/
-│   ├── routes.py        # Auth routes (signup, login, google-login)
-│   ├── schemas.py       # Pydantic models
-│   ├── service.py       # Business logic
-│   ├── gAuth.py         # Google token verification
-│
-│── utils/
-│   ├── dependencies.py # DB dependencies
-│
-│── main.py              # FastAPI app entry point
-│── test.py              # Google ID token validation script
-│── requirements.txt
-```
-
----
-
-## 🔐 Authentication Flow
-
-### 1️⃣ Email/Password Authentication
-
-* `/auth/signup`
-* `/auth/login`
-
-### 2️⃣ Google OAuth Authentication
-
-1. User logs in via Google
-2. Frontend obtains **Google ID Token**
-3. ID Token is sent to backend `/auth/google-login`
-4. Backend:
-
-   * Verifies token audience & issuer
-   * Extracts user email
-   * Creates or logs in user
-   * Returns application JWT token
-
----
-
-## 🧪 Testing Google Login (Backend Only)
-
-You can test Google ID token validity using:
+1. Start backend:
 
 ```bash
-python test.py
-```
-
-The script:
-
-* Accepts Google ID Token
-* Validates audience, issuer & expiry
-* Confirms whether the token is valid
-
----
-
-## 🛠️ Setup Instructions
-
-### 1️⃣ Clone the Repository
-
-```bash
-git clone https://github.com/your-username/autonomous-ai-presentation-agent.git
-cd autonomous-ai-presentation-agent/backend
-```
-
-### 2️⃣ Create Virtual Environment
-
-```bash
-python -m venv genAI_env
-genAI_env\Scripts\activate  # Windows
-```
-
-### 3️⃣ Install Dependencies
-
-```bash
+cd backend
+python -m venv ../genAI_env    # optional: create venv at repo root
+# activate venv (Windows)
+genAI_env\Scripts\activate
 pip install -r requirements.txt
+uvicorn main:app --reload --port 8000
 ```
 
-### 4️⃣ Configure Environment Variables
-
-Create a `.env` file:
-
-```env
-GOOGLE_CLIENT_ID=your_client_id.apps.googleusercontent.com
-GOOGLE_CLIENT_SECRET=your_client_secret
-JWT_SECRET=your_jwt_secret
-```
-
----
-
-## ▶️ Run the Application
+2. Start frontend:
 
 ```bash
-uvicorn main:app --reload
+cd frontend
+npm install
+npm run dev
+# open http://localhost:8081
 ```
 
-API Docs available at:
+## Backend
 
-* Swagger UI: `http://127.0.0.1:8000/docs`
-* OpenAPI JSON: `http://127.0.0.1:8000/openapi.json`
+- Location: `backend/`
+- Entry: `backend/main.py` (FastAPI app)
+- Important packages: `fastapi`, `uvicorn`, `sqlalchemy`, `python-jose`, `passlib`, `httpx`, `python-dotenv`, `python-pptx`, `Pillow`.
+- Requirements: see `backend/requirements.txt`.
+
+Key endpoints
+- `POST /auth/signup` — create user (returns `access_token`)
+- `POST /auth/login` — login (returns `access_token`)
+- `POST /auth/google-login` — accept Google ID token and return app token
+- `POST /generate_ppt` — protected endpoint (requires Bearer JWT) that runs the planning/execution agents and returns a PPTX file.
+
+Authentication
+- JWT tokens are issued by the backend (`auth.utils.create_access_token`) and validated via `auth.dependencies.get_current_user`.
+- During development the backend accepts tokens via `Authorization: Bearer <token>`, and (fallback) via `access_token` query param or `x-access-token` header to support browser form downloads.
+
+Important backend files
+- `backend/auth/` — authentication routes, models, Google token verification.
+- `backend/agents/` — planner & executor agents. Images are produced by `backend/agents/executor/image_agent.py` (uses OpenAI to craft Unsplash queries and fetches images via Unsplash API).
+- `backend/ppt/ppt_builder.py` — builds the final PPTX and embeds images (downloads via `httpx`).
+
+Environment variables (backend)
+- `GOOGLE_CLIENT_ID` — Google OAuth client id (for Google Login flow).
+- `OPENAI_API_KEY` — OpenAI API key (used by image_agent and LLMs).
+- `UNSPLASH_ACCESS_KEY` — Unsplash API key for fetching images.
+- `JWT_SECRET_KEY`, `JWT_ALGORITHM`, `JWT_EXPIRE_MINUTES` — JWT config (in `backend/core/config.py` or `.env`).
+
+Notes on images
+- The backend downloads images (Unsplash) during execution and embeds them into the PPTX. If PPTX generated via a fetch/XHR appears to lack images but running the backend independently produces images, try the browser-form fallback (frontend has a small retry) or run the backend locally and invoke `POST /generate_ppt` directly (server-side generation works).
+
+## Frontend
+
+- Location: `frontend/`
+- Framework: Vite + React + TypeScript
+- Entry: `frontend/src/main.tsx` and pages under `frontend/src/pages/` (notably `Login.tsx`, `Register.tsx`, `Dashboard.tsx`).
+- Env: `frontend/.env` contains `VITE_API_BASE_URL` (defaults to `http://localhost:8000`).
+
+Auth & API
+- Auth context: `frontend/src/contexts/AuthContext.tsx` — manages token + `getAuthHeader()` helper that returns `Authorization: Bearer <token>` for API calls.
+- The Dashboard `Generate` button POSTs to `${VITE_API_BASE_URL}/generate_ppt` with the `Authorization` header and downloads the returned PPTX blob. If the blob is unexpectedly small (images missing), frontend triggers a fallback hidden form POST with the token in `access_token` query param to force a normal browser download that matches backend behavior.
+
+Key frontend files
+- `frontend/src/pages/Dashboard.tsx` — generation UI and download logic.
+- `frontend/src/contexts/AuthContext.tsx` — login/register wrappers that call backend `/auth/*` endpoints and store `access_token` in `localStorage`.
+
+Dev scripts
+- `npm run dev` — start Vite dev server (default port in this workspace is `8081`).
+
+## How to generate a presentation (end-to-end)
+
+1. Start backend on port `8000` (see above).
+2. Start frontend on port `8081` (see above).
+3. In the app: sign up or sign in (or use Google login flow).
+4. Open `Dashboard`, enter a topic, choose slide count and style, and click **Generate Presentation**.
+5. The browser will download the generated `.pptx`. If images are missing, the frontend will attempt a form-based retry that includes the token in the query string to force a full server-side download.
+
+## Troubleshooting
+
+- If images are missing in the downloaded PPTX but backend generates images when run standalone:
+  - Confirm `OPENAI_API_KEY` and `UNSPLASH_ACCESS_KEY` are set and valid in the backend environment.
+  - Start backend locally and call `/generate_ppt` using `curl` or via browser form to confirm server-produced PPTX contains images.
+  - The frontend includes a fallback (hidden form POST) to handle differences between XHR downloads and full browser downloads.
+
+- CORS: backend allows CORS from the frontend dev origin (`http://localhost:8081`) in `backend/main.py` — update if you run the frontend on a different origin.
+
+## Tests & scripts
+
+- `backend/test_ppt_builder_script.py` — quick script to exercise the `ppt_builder` locally.
+- `backend/test_image.py` — utilities for testing image fetch logic.
+
+## Notes for contributors
+
+- Keep authentication logic in `frontend/src/contexts/AuthContext.tsx` synced with backend `/auth` routes.
+- If you improve image generation reliability, prefer fixing server-side behavior in `backend/agents/executor/image_agent.py` or `backend/ppt/ppt_builder.py` rather than relying on frontend fallbacks.
+
+## License
+
+MIT
 
 ---
-
-## 📌 Example API Call (Google Login)
-
-```bash
-curl -X POST http://127.0.0.1:8000/auth/google-login \
--H "Content-Type: application/json" \
--d '{"google_token": "<GOOGLE_ID_TOKEN>"}'
-```
-
----
-
-## 🔮 Future Enhancements
-
-* Frontend integration (React / Next.js)
-* PPT/PDF auto-generation
-* Multi-language presentation support
-* Presentation templates
-* Voice-based prompt input
-
----
-
-## 👨‍💻 Author
-
-**Suyash Bhavalkar**
-
----
-
-## ⭐ Contribution
-
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
----
-
-## 📜 License
-
-This project is licensed under the MIT License.
+_If you want this README expanded with examples, OpenAPI summary snippets, or a CONTRIBUTING guide, tell me which sections to expand._
