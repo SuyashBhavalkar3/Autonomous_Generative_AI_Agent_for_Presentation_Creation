@@ -1,4 +1,4 @@
-from fastapi import Depends, HTTPException, status
+from fastapi import Depends, HTTPException, status, Request
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from sqlalchemy.orm import Session
 
@@ -6,10 +6,11 @@ from .models import User
 from .utils import decode_access_token
 from utils.dependencies import get_db
 
-security = HTTPBearer()
+security = HTTPBearer(auto_error=False)
 
 
 async def get_current_user(
+    request: Request,
     credentials: HTTPAuthorizationCredentials = Depends(security),
     db: Session = Depends(get_db),
 ):
@@ -19,7 +20,13 @@ async def get_current_user(
     `auth.utils.decode_access_token` and the `sub` claim is used to look up the
     user in the database.
     """
-    token = credentials.credentials if credentials else None
+    # Prefer Authorization: Bearer <token>
+    token = credentials.credentials if credentials and credentials.scheme.lower() == 'bearer' else None
+
+    # Fallback: allow token via query param `access_token` or header `x-access-token` for download fallback
+    if not token:
+        token = request.query_params.get('access_token') or request.headers.get('x-access-token')
+
     if not token:
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Missing credentials")
 

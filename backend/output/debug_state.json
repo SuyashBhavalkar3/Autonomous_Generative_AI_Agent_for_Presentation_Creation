@@ -1,121 +1,121 @@
 {
   "goal": "Artificial Intelligence",
   "num_slides": 5,
-  "research_agent": "- Artificial Intelligence (AI) is the simulation of human intelligence processes by machines.\n- It encompasses tasks such as learning, reasoning, problem-solving, perception, and language understanding.\n- AI is used in various industries, including healthcare, finance, transportation, and entertainment.\n- Machine learning, a subset of AI, involves training algorithms to learn from data and make predictions or decisions.\n- Deep learning, another subset of AI, uses neural networks to mimic the human brain's structure and function.\n- Ethical concerns surrounding AI include job displacement, bias in algorithms, and privacy issues.\n- The future of AI includes advancements in robotics, natural language processing, and autonomous vehicles.",
-  "content_agent": "1. Introduction to Artificial Intelligence\n- Artificial Intelligence (AI) simulates human intelligence processes by machines.\n- Tasks include learning, reasoning, problem-solving, perception, and language understanding.\n- Widely used across industries such as healthcare, finance, transportation, and entertainment.\n\n2. Machine Learning in AI\n- Machine learning is a subset of AI that involves training algorithms to learn from data.\n- Algorithms can make predictions or decisions based on the data they are trained on.\n- It is a key component of AI applications and technologies.\n\n3. Deep Learning in AI\n- Deep learning is another subset of AI that uses neural networks to mimic the human brain.\n- Neural networks are structured to process data and learn patterns, similar to how the human brain functions.\n- Deep learning is used in image recognition, speech recognition, and natural language processing.\n\n4. Ethical Concerns in AI\n- Ethical concerns surrounding AI include job displacement due to automation.\n- Bias in algorithms can lead to unfair outcomes and discrimination.\n- Privacy issues arise from the collection and use of personal data in AI systems.\n\n5. Future of AI\n- The future of AI includes advancements in robotics, enabling more complex tasks to be automated.\n- Natural language processing will continue to improve, making human-machine interactions more seamless.\n- Autonomous vehicles are a key area of development, with AI playing a crucial role in their operation and decision-making processes.",
+  "research_agent": "- Artificial Intelligence (AI) is a branch of computer science that aims to create machines capable of intelligent behavior.\n- AI systems can learn from data, adapt to new inputs, and perform tasks that typically require human intelligence.\n- Examples of AI applications include speech recognition, image recognition, and autonomous vehicles.\n- Machine learning is a subset of AI that focuses on developing algorithms that allow computers to learn from and make predictions or decisions based on data.\n- Deep learning is a subset of machine learning that uses neural networks with many layers to model complex patterns in large amounts of data.\n- Ethical considerations around AI include issues related to bias, privacy, and job displacement.\n- The future of AI holds potential for advancements in healthcare, transportation, and other industries, but also raises concerns about its impact on society.",
+  "content_agent": "1. Introduction to Artificial Intelligence\n- AI is a branch of computer science aiming to create intelligent machines.\n- AI systems can learn from data, adapt to new inputs, and perform tasks requiring human intelligence.\n- Examples of AI applications include speech recognition, image recognition, and autonomous vehicles.\n\n2. Machine Learning and Deep Learning\n- Machine learning is a subset of AI focusing on developing algorithms for learning from data.\n- Deep learning uses neural networks with many layers to model complex patterns in large datasets.\n- Both machine learning and deep learning are essential components of AI technology.\n\n3. Ethical Considerations in AI\n- Ethical concerns around AI include issues related to bias, privacy, and job displacement.\n- Ensuring fairness and transparency in AI algorithms is crucial for ethical AI development.\n- Addressing ethical considerations is essential for building trust in AI technologies.\n\n4. Future of AI\n- The future of AI holds potential for advancements in healthcare, transportation, and other industries.\n- AI has the power to revolutionize various sectors and improve efficiency and decision-making.\n- However, concerns about the societal impact of AI, such as job displacement, need to be addressed.\n\n5. Conclusion\n- AI is a transformative technology with the potential to revolutionize various industries.\n- Ethical considerations and societal impacts must be carefully considered in AI development.\n- Continued research and collaboration are essential for maximizing the benefits of AI while mitigating potential risks.",
   "image_agent": {
-    "slide_1": "https://images.unsplash.com/photo-1739054729987-4b3c60f072a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDM3Mzd8&ixlib=rb-4.1.0&q=80&w=1080",
-    "slide_2": "https://images.unsplash.com/photo-1727434032773-af3cd98375ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDM3Mzl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "slide_3": "https://images.unsplash.com/photo-1758685845882-288eee8e913e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDM3NDN8&ixlib=rb-4.1.0&q=80&w=1080",
-    "slide_4": "https://images.unsplash.com/photo-1675557570482-df9926f61d86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDM3NDV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "slide_5": "https://images.unsplash.com/photo-1588710253044-1e87020ebfb5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDM3NDl8&ixlib=rb-4.1.0&q=80&w=1080"
+    "slide_1": "https://images.unsplash.com/photo-1689443111130-6e9c7dfd8f9e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc3MTA2ODV8&ixlib=rb-4.1.0&q=80&w=1080",
+    "slide_2": "https://images.unsplash.com/photo-1717501218456-c4789b65fc21?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc3MTA2ODd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "slide_3": "https://images.unsplash.com/photo-1675557009483-e6cf3867976b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc3MTA2OTB8&ixlib=rb-4.1.0&q=80&w=1080",
+    "slide_4": "https://images.unsplash.com/photo-1762281429414-5ee5f2dbb243?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc3MTA2OTR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "slide_5": "https://images.unsplash.com/photo-1738640680088-7893beb0886b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc3MTA2OTd8&ixlib=rb-4.1.0&q=80&w=1080"
   },
   "slide_agent": {
     "slides": [
       {
         "title": "Introduction to Artificial Intelligence",
         "bullets": [
-          "Artificial Intelligence (AI) simulates human intelligence processes by machines.",
-          "Tasks include learning, reasoning, problem-solving, perception, and language understanding.",
-          "Widely used across industries such as healthcare, finance, transportation, and entertainment."
+          "AI is a branch of computer science aiming to create intelligent machines.",
+          "AI systems can learn from data, adapt to new inputs, and perform tasks requiring human intelligence.",
+          "Examples of AI applications include speech recognition, image recognition, and autonomous vehicles."
         ],
-        "image_url": "https://images.unsplash.com/photo-1739054729987-4b3c60f072a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDM3Mzd8&ixlib=rb-4.1.0&q=80&w=1080"
+        "image_url": "https://images.unsplash.com/photo-1689443111130-6e9c7dfd8f9e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc3MTA2ODV8&ixlib=rb-4.1.0&q=80&w=1080"
       },
       {
-        "title": "Machine Learning in AI",
+        "title": "Machine Learning and Deep Learning",
         "bullets": [
-          "Machine learning is a subset of AI that involves training algorithms to learn from data.",
-          "Algorithms can make predictions or decisions based on the data they are trained on.",
-          "It is a key component of AI applications and technologies."
+          "Machine learning is a subset of AI focusing on developing algorithms for learning from data.",
+          "Deep learning uses neural networks with many layers to model complex patterns in large datasets.",
+          "Both machine learning and deep learning are essential components of AI technology."
         ],
-        "image_url": "https://images.unsplash.com/photo-1727434032773-af3cd98375ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDM3Mzl8&ixlib=rb-4.1.0&q=80&w=1080"
+        "image_url": "https://images.unsplash.com/photo-1717501218456-c4789b65fc21?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc3MTA2ODd8&ixlib=rb-4.1.0&q=80&w=1080"
       },
       {
-        "title": "Deep Learning in AI",
+        "title": "Ethical Considerations in AI",
         "bullets": [
-          "Deep learning is another subset of AI that uses neural networks to mimic the human brain.",
-          "Neural networks are structured to process data and learn patterns, similar to how the human brain functions.",
-          "Deep learning is used in image recognition, speech recognition, and natural language processing."
+          "Ethical concerns around AI include issues related to bias, privacy, and job displacement.",
+          "Ensuring fairness and transparency in AI algorithms is crucial for ethical AI development.",
+          "Addressing ethical considerations is essential for building trust in AI technologies."
         ],
-        "image_url": "https://images.unsplash.com/photo-1758685845882-288eee8e913e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDM3NDN8&ixlib=rb-4.1.0&q=80&w=1080"
-      },
-      {
-        "title": "Ethical Concerns in AI",
-        "bullets": [
-          "Ethical concerns surrounding AI include job displacement due to automation.",
-          "Bias in algorithms can lead to unfair outcomes and discrimination.",
-          "Privacy issues arise from the collection and use of personal data in AI systems."
-        ],
-        "image_url": "https://images.unsplash.com/photo-1675557570482-df9926f61d86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDM3NDV8&ixlib=rb-4.1.0&q=80&w=1080"
+        "image_url": "https://images.unsplash.com/photo-1675557009483-e6cf3867976b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc3MTA2OTB8&ixlib=rb-4.1.0&q=80&w=1080"
       },
       {
         "title": "Future of AI",
         "bullets": [
-          "The future of AI includes advancements in robotics, enabling more complex tasks to be automated.",
-          "Natural language processing will continue to improve, making human-machine interactions more seamless.",
-          "Autonomous vehicles are a key area of development, with AI playing a crucial role in their operation and decision-making processes."
+          "The future of AI holds potential for advancements in healthcare, transportation, and other industries.",
+          "AI has the power to revolutionize various sectors and improve efficiency and decision-making.",
+          "However, concerns about the societal impact of AI, such as job displacement, need to be addressed."
         ],
-        "image_url": "https://images.unsplash.com/photo-1588710253044-1e87020ebfb5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDM3NDl8&ixlib=rb-4.1.0&q=80&w=1080"
+        "image_url": "https://images.unsplash.com/photo-1762281429414-5ee5f2dbb243?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc3MTA2OTR8&ixlib=rb-4.1.0&q=80&w=1080"
+      },
+      {
+        "title": "Conclusion",
+        "bullets": [
+          "AI is a transformative technology with the potential to revolutionize various industries.",
+          "Ethical considerations and societal impacts must be carefully considered in AI development.",
+          "Continued research and collaboration are essential for maximizing the benefits of AI while mitigating potential risks."
+        ],
+        "image_url": "https://images.unsplash.com/photo-1738640680088-7893beb0886b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc3MTA2OTd8&ixlib=rb-4.1.0&q=80&w=1080"
       }
     ]
   },
   "executor_agent": {
-    "output_file": "output\\presentations\\presentation_938102858e60476ba6fb8879d8d571b6.pptx",
+    "output_file": "output\\presentations\\presentation_6325659124e444e293536e8e9dcf11aa.pptx",
     "slides": [
       {
         "slide_id": 1,
         "title": "Introduction to Artificial Intelligence",
         "bullets": [
-          "Artificial Intelligence (AI) simulates human intelligence processes by machines.",
-          "Tasks include learning, reasoning, problem-solving, perception, and language understanding.",
-          "Widely used across industries such as healthcare, finance, transportation, and entertainment."
+          "AI is a branch of computer science aiming to create intelligent machines.",
+          "AI systems can learn from data, adapt to new inputs, and perform tasks requiring human intelligence.",
+          "Examples of AI applications include speech recognition, image recognition, and autonomous vehicles."
         ],
-        "image_path": "output\\images\\65e43498d457446d9377d2bd6986f068\\photo-1739054729987-4b3c60f072a2.jpg",
-        "image_url": "https://images.unsplash.com/photo-1739054729987-4b3c60f072a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDM3Mzd8&ixlib=rb-4.1.0&q=80&w=1080"
+        "image_path": "output\\images\\c6f82c8a2d4548acb8da3a0783a44b24\\photo-1689443111130-6e9c7dfd8f9e.jpg",
+        "image_url": "https://images.unsplash.com/photo-1689443111130-6e9c7dfd8f9e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc3MTA2ODV8&ixlib=rb-4.1.0&q=80&w=1080"
       },
       {
         "slide_id": 2,
-        "title": "Machine Learning in AI",
+        "title": "Machine Learning and Deep Learning",
         "bullets": [
-          "Machine learning is a subset of AI that involves training algorithms to learn from data.",
-          "Algorithms can make predictions or decisions based on the data they are trained on.",
-          "It is a key component of AI applications and technologies."
+          "Machine learning is a subset of AI focusing on developing algorithms for learning from data.",
+          "Deep learning uses neural networks with many layers to model complex patterns in large datasets.",
+          "Both machine learning and deep learning are essential components of AI technology."
         ],
-        "image_path": "output\\images\\65e43498d457446d9377d2bd6986f068\\photo-1727434032773-af3cd98375ba.jpg",
-        "image_url": "https://images.unsplash.com/photo-1727434032773-af3cd98375ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDM3Mzl8&ixlib=rb-4.1.0&q=80&w=1080"
+        "image_path": "output\\images\\c6f82c8a2d4548acb8da3a0783a44b24\\photo-1717501218456-c4789b65fc21.jpg",
+        "image_url": "https://images.unsplash.com/photo-1717501218456-c4789b65fc21?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc3MTA2ODd8&ixlib=rb-4.1.0&q=80&w=1080"
       },
       {
         "slide_id": 3,
-        "title": "Deep Learning in AI",
+        "title": "Ethical Considerations in AI",
         "bullets": [
-          "Deep learning is another subset of AI that uses neural networks to mimic the human brain.",
-          "Neural networks are structured to process data and learn patterns, similar to how the human brain functions.",
-          "Deep learning is used in image recognition, speech recognition, and natural language processing."
+          "Ethical concerns around AI include issues related to bias, privacy, and job displacement.",
+          "Ensuring fairness and transparency in AI algorithms is crucial for ethical AI development.",
+          "Addressing ethical considerations is essential for building trust in AI technologies."
         ],
-        "image_path": "output\\images\\65e43498d457446d9377d2bd6986f068\\photo-1758685845882-288eee8e913e.jpg",
-        "image_url": "https://images.unsplash.com/photo-1758685845882-288eee8e913e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDM3NDN8&ixlib=rb-4.1.0&q=80&w=1080"
+        "image_path": "output\\images\\c6f82c8a2d4548acb8da3a0783a44b24\\photo-1675557009483-e6cf3867976b.jpg",
+        "image_url": "https://images.unsplash.com/photo-1675557009483-e6cf3867976b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc3MTA2OTB8&ixlib=rb-4.1.0&q=80&w=1080"
       },
       {
         "slide_id": 4,
-        "title": "Ethical Concerns in AI",
+        "title": "Future of AI",
         "bullets": [
-          "Ethical concerns surrounding AI include job displacement due to automation.",
-          "Bias in algorithms can lead to unfair outcomes and discrimination.",
-          "Privacy issues arise from the collection and use of personal data in AI systems."
+          "The future of AI holds potential for advancements in healthcare, transportation, and other industries.",
+          "AI has the power to revolutionize various sectors and improve efficiency and decision-making.",
+          "However, concerns about the societal impact of AI, such as job displacement, need to be addressed."
         ],
-        "image_path": "output\\images\\65e43498d457446d9377d2bd6986f068\\photo-1675557570482-df9926f61d86.jpg",
-        "image_url": "https://images.unsplash.com/photo-1675557570482-df9926f61d86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDM3NDV8&ixlib=rb-4.1.0&q=80&w=1080"
+        "image_path": "output\\images\\c6f82c8a2d4548acb8da3a0783a44b24\\photo-1762281429414-5ee5f2dbb243.jpg",
+        "image_url": "https://images.unsplash.com/photo-1762281429414-5ee5f2dbb243?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc3MTA2OTR8&ixlib=rb-4.1.0&q=80&w=1080"
       },
       {
         "slide_id": 5,
-        "title": "Future of AI",
+        "title": "Conclusion",
         "bullets": [
-          "The future of AI includes advancements in robotics, enabling more complex tasks to be automated.",
-          "Natural language processing will continue to improve, making human-machine interactions more seamless.",
-          "Autonomous vehicles are a key area of development, with AI playing a crucial role in their operation and decision-making processes."
+          "AI is a transformative technology with the potential to revolutionize various industries.",
+          "Ethical considerations and societal impacts must be carefully considered in AI development.",
+          "Continued research and collaboration are essential for maximizing the benefits of AI while mitigating potential risks."
         ],
-        "image_path": "output\\images\\65e43498d457446d9377d2bd6986f068\\photo-1588710253044-1e87020ebfb5.jpg",
-        "image_url": "https://images.unsplash.com/photo-1588710253044-1e87020ebfb5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc2MDM3NDl8&ixlib=rb-4.1.0&q=80&w=1080"
+        "image_path": "output\\images\\c6f82c8a2d4548acb8da3a0783a44b24\\photo-1738640680088-7893beb0886b.jpg",
+        "image_url": "https://images.unsplash.com/photo-1738640680088-7893beb0886b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc3MTA2OTd8&ixlib=rb-4.1.0&q=80&w=1080"
       }
     ]
   }

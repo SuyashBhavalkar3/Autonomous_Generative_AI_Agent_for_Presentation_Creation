@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from agents.planner.routes import router as planner_router
 from agents.executor.routes import router as executor_router
 from auth.routes import router as auth_router
@@ -19,6 +20,15 @@ app = FastAPI(
     title="Autonomous PPT Generation API",
     description="LangGraph-style DAG-based autonomous multi-agent system",
     version="1.0.0",
+)
+
+# Allow frontend dev server to talk to backend
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:8081"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 # Include routers
