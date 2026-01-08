@@ -1,121 +1,41 @@
 {
-  "goal": "Artificial Intelligence",
-  "num_slides": 5,
-  "research_agent": "- Artificial Intelligence (AI) is a branch of computer science that aims to create machines capable of intelligent behavior.\n- AI systems can learn from data, adapt to new inputs, and perform tasks that typically require human intelligence.\n- Examples of AI applications include speech recognition, image recognition, and autonomous vehicles.\n- Machine learning is a subset of AI that focuses on developing algorithms that allow computers to learn from and make predictions or decisions based on data.\n- Deep learning is a subset of machine learning that uses neural networks with many layers to model complex patterns in large amounts of data.\n- Ethical considerations around AI include issues related to bias, privacy, and job displacement.\n- The future of AI holds potential for advancements in healthcare, transportation, and other industries, but also raises concerns about its impact on society.",
-  "content_agent": "1. Introduction to Artificial Intelligence\n- AI is a branch of computer science aiming to create intelligent machines.\n- AI systems can learn from data, adapt to new inputs, and perform tasks requiring human intelligence.\n- Examples of AI applications include speech recognition, image recognition, and autonomous vehicles.\n\n2. Machine Learning and Deep Learning\n- Machine learning is a subset of AI focusing on developing algorithms for learning from data.\n- Deep learning uses neural networks with many layers to model complex patterns in large datasets.\n- Both machine learning and deep learning are essential components of AI technology.\n\n3. Ethical Considerations in AI\n- Ethical concerns around AI include issues related to bias, privacy, and job displacement.\n- Ensuring fairness and transparency in AI algorithms is crucial for ethical AI development.\n- Addressing ethical considerations is essential for building trust in AI technologies.\n\n4. Future of AI\n- The future of AI holds potential for advancements in healthcare, transportation, and other industries.\n- AI has the power to revolutionize various sectors and improve efficiency and decision-making.\n- However, concerns about the societal impact of AI, such as job displacement, need to be addressed.\n\n5. Conclusion\n- AI is a transformative technology with the potential to revolutionize various industries.\n- Ethical considerations and societal impacts must be carefully considered in AI development.\n- Continued research and collaboration are essential for maximizing the benefits of AI while mitigating potential risks.",
+  "goal": "Introductio to Artificial Intelligence",
+  "num_slides": 1,
+  "research_agent": "- Artificial Intelligence (AI) is the simulation of human intelligence processes by machines.\n- AI involves the development of algorithms that can perform tasks such as learning, problem-solving, and decision-making.\n- There are different types of AI, including narrow AI (focused on a specific task) and general AI (capable of performing any intellectual task that a human can).\n- AI technologies include machine learning, natural language processing, and computer vision.\n- AI has applications in various industries, such as healthcare, finance, and transportation.\n- Ethical considerations surrounding AI include issues related to bias, privacy, and job displacement.",
+  "content_agent": "1. Introduction to Artificial Intelligence\n- AI is the simulation of human intelligence processes by machines.\n- Development of algorithms for learning, problem-solving, and decision-making.\n- Types of AI: narrow AI (specific task) and general AI (any intellectual task).\n- AI technologies: machine learning, natural language processing, computer vision.\n- Applications in healthcare, finance, transportation, and more.\n\n2. Types of Artificial Intelligence\n- Narrow AI: focused on specific tasks.\n- General AI: capable of any intellectual task a human can do.\n- Examples: Siri, Alexa (narrow AI), theoretical concept (general AI).\n\n3. AI Technologies\n- Machine learning: algorithms learn from data.\n- Natural language processing: understanding and generating human language.\n- Computer vision: interpreting and understanding visual information.\n\n4. Applications of AI\n- Healthcare: diagnosis, personalized treatment.\n- Finance: fraud detection, trading algorithms.\n- Transportation: autonomous vehicles, traffic optimization.\n\n5. Ethical Considerations in AI\n- Bias: algorithms reflect biases in data.\n- Privacy: concerns over data collection and usage.\n- Job displacement: automation leading to job loss.",
   "image_agent": {
-    "slide_1": "https://images.unsplash.com/photo-1689443111130-6e9c7dfd8f9e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc3MTA2ODV8&ixlib=rb-4.1.0&q=80&w=1080",
-    "slide_2": "https://images.unsplash.com/photo-1717501218456-c4789b65fc21?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc3MTA2ODd8&ixlib=rb-4.1.0&q=80&w=1080",
-    "slide_3": "https://images.unsplash.com/photo-1675557009483-e6cf3867976b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc3MTA2OTB8&ixlib=rb-4.1.0&q=80&w=1080",
-    "slide_4": "https://images.unsplash.com/photo-1762281429414-5ee5f2dbb243?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc3MTA2OTR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "slide_5": "https://images.unsplash.com/photo-1738640680088-7893beb0886b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc3MTA2OTd8&ixlib=rb-4.1.0&q=80&w=1080"
+    "slide_1": "https://images.unsplash.com/photo-1752451399416-faef5f9fe572?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc4NzUzMjJ8&ixlib=rb-4.1.0&q=80&w=1080"
   },
   "slide_agent": {
     "slides": [
       {
         "title": "Introduction to Artificial Intelligence",
         "bullets": [
-          "AI is a branch of computer science aiming to create intelligent machines.",
-          "AI systems can learn from data, adapt to new inputs, and perform tasks requiring human intelligence.",
-          "Examples of AI applications include speech recognition, image recognition, and autonomous vehicles."
+          "AI is the simulation of human intelligence processes by machines.",
+          "Development of algorithms for learning, problem-solving, and decision-making.",
+          "Types of AI: narrow AI (specific task) and general AI (any intellectual task).",
+          "AI technologies: machine learning, natural language processing, computer vision.",
+          "Applications in healthcare, finance, transportation, and more."
         ],
-        "image_url": "https://images.unsplash.com/photo-1689443111130-6e9c7dfd8f9e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc3MTA2ODV8&ixlib=rb-4.1.0&q=80&w=1080"
-      },
-      {
-        "title": "Machine Learning and Deep Learning",
-        "bullets": [
-          "Machine learning is a subset of AI focusing on developing algorithms for learning from data.",
-          "Deep learning uses neural networks with many layers to model complex patterns in large datasets.",
-          "Both machine learning and deep learning are essential components of AI technology."
-        ],
-        "image_url": "https://images.unsplash.com/photo-1717501218456-c4789b65fc21?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc3MTA2ODd8&ixlib=rb-4.1.0&q=80&w=1080"
-      },
-      {
-        "title": "Ethical Considerations in AI",
-        "bullets": [
-          "Ethical concerns around AI include issues related to bias, privacy, and job displacement.",
-          "Ensuring fairness and transparency in AI algorithms is crucial for ethical AI development.",
-          "Addressing ethical considerations is essential for building trust in AI technologies."
-        ],
-        "image_url": "https://images.unsplash.com/photo-1675557009483-e6cf3867976b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc3MTA2OTB8&ixlib=rb-4.1.0&q=80&w=1080"
-      },
-      {
-        "title": "Future of AI",
-        "bullets": [
-          "The future of AI holds potential for advancements in healthcare, transportation, and other industries.",
-          "AI has the power to revolutionize various sectors and improve efficiency and decision-making.",
-          "However, concerns about the societal impact of AI, such as job displacement, need to be addressed."
-        ],
-        "image_url": "https://images.unsplash.com/photo-1762281429414-5ee5f2dbb243?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc3MTA2OTR8&ixlib=rb-4.1.0&q=80&w=1080"
-      },
-      {
-        "title": "Conclusion",
-        "bullets": [
-          "AI is a transformative technology with the potential to revolutionize various industries.",
-          "Ethical considerations and societal impacts must be carefully considered in AI development.",
-          "Continued research and collaboration are essential for maximizing the benefits of AI while mitigating potential risks."
-        ],
-        "image_url": "https://images.unsplash.com/photo-1738640680088-7893beb0886b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc3MTA2OTd8&ixlib=rb-4.1.0&q=80&w=1080"
+        "image_url": "https://images.unsplash.com/photo-1752451399416-faef5f9fe572?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc4NzUzMjJ8&ixlib=rb-4.1.0&q=80&w=1080"
       }
     ]
   },
   "executor_agent": {
-    "output_file": "output\\presentations\\presentation_6325659124e444e293536e8e9dcf11aa.pptx",
+    "output_file": "output\\presentations\\presentation_5734ba22f30c4580bc6b8197c777e7ce.pptx",
     "slides": [
       {
         "slide_id": 1,
         "title": "Introduction to Artificial Intelligence",
         "bullets": [
-          "AI is a branch of computer science aiming to create intelligent machines.",
-          "AI systems can learn from data, adapt to new inputs, and perform tasks requiring human intelligence.",
-          "Examples of AI applications include speech recognition, image recognition, and autonomous vehicles."
+          "AI is the simulation of human intelligence processes by machines.",
+          "Development of algorithms for learning, problem-solving, and decision-making.",
+          "Types of AI: narrow AI (specific task) and general AI (any intellectual task).",
+          "AI technologies: machine learning, natural language processing, computer vision.",
+          "Applications in healthcare, finance, transportation, and more."
         ],
-        "image_path": "output\\images\\c6f82c8a2d4548acb8da3a0783a44b24\\photo-1689443111130-6e9c7dfd8f9e.jpg",
-        "image_url": "https://images.unsplash.com/photo-1689443111130-6e9c7dfd8f9e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc3MTA2ODV8&ixlib=rb-4.1.0&q=80&w=1080"
-      },
-      {
-        "slide_id": 2,
-        "title": "Machine Learning and Deep Learning",
-        "bullets": [
-          "Machine learning is a subset of AI focusing on developing algorithms for learning from data.",
-          "Deep learning uses neural networks with many layers to model complex patterns in large datasets.",
-          "Both machine learning and deep learning are essential components of AI technology."
-        ],
-        "image_path": "output\\images\\c6f82c8a2d4548acb8da3a0783a44b24\\photo-1717501218456-c4789b65fc21.jpg",
-        "image_url": "https://images.unsplash.com/photo-1717501218456-c4789b65fc21?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc3MTA2ODd8&ixlib=rb-4.1.0&q=80&w=1080"
-      },
-      {
-        "slide_id": 3,
-        "title": "Ethical Considerations in AI",
-        "bullets": [
-          "Ethical concerns around AI include issues related to bias, privacy, and job displacement.",
-          "Ensuring fairness and transparency in AI algorithms is crucial for ethical AI development.",
-          "Addressing ethical considerations is essential for building trust in AI technologies."
-        ],
-        "image_path": "output\\images\\c6f82c8a2d4548acb8da3a0783a44b24\\photo-1675557009483-e6cf3867976b.jpg",
-        "image_url": "https://images.unsplash.com/photo-1675557009483-e6cf3867976b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc3MTA2OTB8&ixlib=rb-4.1.0&q=80&w=1080"
-      },
-      {
-        "slide_id": 4,
-        "title": "Future of AI",
-        "bullets": [
-          "The future of AI holds potential for advancements in healthcare, transportation, and other industries.",
-          "AI has the power to revolutionize various sectors and improve efficiency and decision-making.",
-          "However, concerns about the societal impact of AI, such as job displacement, need to be addressed."
-        ],
-        "image_path": "output\\images\\c6f82c8a2d4548acb8da3a0783a44b24\\photo-1762281429414-5ee5f2dbb243.jpg",
-        "image_url": "https://images.unsplash.com/photo-1762281429414-5ee5f2dbb243?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc3MTA2OTR8&ixlib=rb-4.1.0&q=80&w=1080"
-      },
-      {
-        "slide_id": 5,
-        "title": "Conclusion",
-        "bullets": [
-          "AI is a transformative technology with the potential to revolutionize various industries.",
-          "Ethical considerations and societal impacts must be carefully considered in AI development.",
-          "Continued research and collaboration are essential for maximizing the benefits of AI while mitigating potential risks."
-        ],
-        "image_path": "output\\images\\c6f82c8a2d4548acb8da3a0783a44b24\\photo-1738640680088-7893beb0886b.jpg",
-        "image_url": "https://images.unsplash.com/photo-1738640680088-7893beb0886b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc3MTA2OTd8&ixlib=rb-4.1.0&q=80&w=1080"
+        "image_path": "output\\images\\2932511c1da547e1ae6c1486d03faf73\\photo-1752451399416-faef5f9fe572.jpg",
+        "image_url": "https://images.unsplash.com/photo-1752451399416-faef5f9fe572?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc4NzUzMjJ8&ixlib=rb-4.1.0&q=80&w=1080"
       }
     ]
   }
