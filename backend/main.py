@@ -43,21 +43,85 @@ app.include_router(executor_router, dependencies=[Depends(get_current_user)])
 
 
 class GeneratePPTRequest(BaseModel):
+    # Public API contract for the generate PPT endpoint.
+    # `prompt` is the topic/goal string. `num_slides` is the desired slide count.
     prompt: str = Field(..., min_length=1)
     num_slides: int = Field(5, ge=1, le=14)
 
 
 @app.post("/generate_ppt", dependencies=[Depends(get_current_user)])
-async def generate_ppt(req: GeneratePPTRequest, request: Request):
+@app.post("/generate-ppt", dependencies=[Depends(get_current_user)])
+async def generate_ppt(request: Request):
     """
-    Endpoint that accepts:
-      - `prompt` (str): topic/goal for presentation
-      - `num_slides` (int): desired number of slides (1-14)
+    Accept either JSON POSTs (preferred) or legacy/browser form POSTs.
 
-    Returns JSON with `ppt_path` and `slides` metadata (title, bullets, image_url).
+    Supported request formats:
+        - application/json: { "prompt": "...", "num_slides": 8 }
+        - application/x-www-form-urlencoded or multipart form with fields:
+            - `prompt` and `num_slides` OR
+            - a single `payload` field containing a JSON string
+
+    The handler normalizes the incoming payload, validates it with the
+    `GeneratePPTRequest` Pydantic model and then runs the planner/executor.
+    This avoids the common 422 error: "Input should be a valid dictionary"
+    which appears when clients send a non-object body (e.g., a string).
     """
-    prompt = req.prompt.strip()
-    num_slides = int(req.num_slides)
+    import json as _json
+    from pydantic import ValidationError
+
+    # Parse body depending on Content-Type. Be permissive for browser form
+    # fallbacks that send a `payload` field containing JSON as a string.
+    content_type = (request.headers.get("content-type") or "").lower()
+    payload_dict = None
+
+    try:
+        if "application/json" in content_type:
+            # Fast path: client sent JSON
+            payload_dict = await request.json()
+        elif "application/x-www-form-urlencoded" in content_type or "multipart/form-data" in content_type:
+            form = await request.form()
+            # If a single `payload` field is present, it likely contains JSON
+            if "payload" in form:
+                try:
+                    payload_dict = _json.loads(form.get("payload"))
+                except Exception:
+                    # fallback: treat form fields as the payload
+                    payload_dict = dict(form)
+            else:
+                payload_dict = dict(form)
+        else:
+            # Unknown content-type: attempt to read raw body and parse JSON
+            raw = await request.body()
+            if raw:
+                try:
+                    payload_dict = _json.loads(raw.decode("utf-8"))
+                except Exception:
+                    # last-resort: try to parse as form-encoded key=value pairs
+                    text = raw.decode("utf-8")
+                    if "=" in text and "&" in text:
+                        from urllib.parse import parse_qs
+                        qs = parse_qs(text)
+                        # parse_qs returns lists for each value
+                        payload_dict = {k: v[0] for k, v in qs.items()}
+                    else:
+                        payload_dict = None
+
+        if not isinstance(payload_dict, dict):
+            raise HTTPException(status_code=400, detail="Request body must be a JSON object or form with `prompt` and `num_slides` fields")
+
+        # Validate and coerce types using Pydantic
+        try:
+            req = GeneratePPTRequest.parse_obj(payload_dict)
+        except ValidationError as ve:
+            # Return a clear 422-like response containing validation errors
+            raise HTTPException(status_code=422, detail=ve.errors())
+
+        prompt = req.prompt.strip()
+        num_slides = int(req.num_slides)
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=400, detail=f"Unable to parse request body: {e}")
 
     # Build plan and execute DAG
     planner = PlannerAgent()

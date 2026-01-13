@@ -1,141 +1,121 @@
 {
-  "goal": "Introduction To Artificial Intelligence",
+  "goal": "Introduction To HealthCare",
   "num_slides": 5,
-  "research_agent": "- Artificial Intelligence (AI) is a branch of computer science that aims to create intelligent machines that can simulate human intelligence.\n- AI involves the development of algorithms that can perform tasks such as problem-solving, learning, and decision-making.\n- Machine learning is a subset of AI that focuses on developing algorithms that allow machines to learn from data and improve their performance over time.\n- Deep learning is a subset of machine learning that uses artificial neural networks to model and solve complex problems.\n- AI has applications in various industries such as healthcare, finance, and transportation, and is expected to have a significant impact on society in the future.",
-  "content_agent": "1. Introduction to Artificial Intelligence\n- AI is a branch of computer science aiming to create intelligent machines.\n- Involves developing algorithms for problem-solving, learning, and decision-making.\n- Machine learning is a subset of AI focusing on learning from data.\n- Deep learning uses artificial neural networks for complex problem-solving.\n- AI has applications in healthcare, finance, transportation, and more.\n\n2. Understanding Artificial Intelligence\n- AI simulates human intelligence in machines.\n- Algorithms are developed for various tasks.\n- Machine learning allows machines to learn and improve.\n- Deep learning uses neural networks for complex problems.\n- AI has a wide range of applications in different industries.\n\n3. Importance of Artificial Intelligence\n- AI has the potential to revolutionize industries.\n- Enhances efficiency and productivity in various sectors.\n- Improves decision-making processes.\n- Enables automation of tasks.\n- Expected to have a significant impact on society in the future.\n\n4. Applications of Artificial Intelligence\n- Healthcare: AI assists in diagnostics and personalized treatment.\n- Finance: AI is used for fraud detection and algorithmic trading.\n- Transportation: AI powers autonomous vehicles and traffic management.\n- Retail: AI enhances customer experience and personalization.\n- Education: AI aids in personalized learning and student assessment.\n\n5. Future of Artificial Intelligence\n- AI is continuously evolving and advancing.\n- Expected to play a crucial role in shaping the future.\n- Ethical considerations and regulations are being developed.\n- AI will continue to impact society in various ways.\n- Opportunities for innovation and growth in AI-related industries.",
+  "research_agent": "- Healthcare is the maintenance or improvement of health through the prevention, diagnosis, treatment, and recovery of illness and injury.\n- It encompasses a wide range of services, including medical, dental, mental health, and pharmaceutical care.\n- Healthcare systems vary by country, with some being publicly funded, privately funded, or a combination of both.\n- Access to healthcare can be influenced by factors such as socioeconomic status, location, and insurance coverage.\n- The goal of healthcare is to promote overall well-being and quality of life for individuals and populations.",
+  "content_agent": "1. Introduction to Healthcare\n- Healthcare is the maintenance or improvement of health through prevention, diagnosis, treatment, and recovery of illness and injury.\n- Encompasses a wide range of services including medical, dental, mental health, and pharmaceutical care.\n- Healthcare systems vary by country, with some being publicly funded, privately funded, or a combination of both.\n\n2. Factors Influencing Access to Healthcare\n- Access to healthcare can be influenced by factors such as socioeconomic status, location, and insurance coverage.\n- Disparities in access can lead to unequal health outcomes among different populations.\n- Efforts are made to address barriers to access through policy changes and community initiatives.\n\n3. Importance of Healthcare\n- The goal of healthcare is to promote overall well-being and quality of life for individuals and populations.\n- Preventive care plays a crucial role in maintaining health and reducing the burden of disease.\n- Healthcare professionals work collaboratively to provide comprehensive care and support to patients.\n\n4. Challenges in Healthcare\n- Rising healthcare costs can create financial barriers to access for individuals and families.\n- Shortages of healthcare providers in certain specialties or regions can limit access to care.\n- Addressing disparities in healthcare quality and outcomes remains a significant challenge for the healthcare system.\n\n5. Future of Healthcare\n- Advances in technology and telemedicine are transforming the delivery of healthcare services.\n- Emphasis on personalized medicine and precision healthcare is shaping the future of treatment and prevention.\n- Collaboration between healthcare providers, policymakers, and community stakeholders is essential for improving healthcare access and outcomes.",
   "image_agent": {
-    "slide_1": "https://images.unsplash.com/photo-1757310998648-f8aaa5572e8e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjgyODExNDN8&ixlib=rb-4.1.0&q=80&w=1080",
-    "slide_2": "https://images.unsplash.com/photo-1758626044744-463ce33546a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjgyODExNDR8&ixlib=rb-4.1.0&q=80&w=1080",
-    "slide_3": "https://images.unsplash.com/photo-1766898993564-ab42c311921e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjgyODExNDd8&ixlib=rb-4.1.0&q=80&w=1080",
-    "slide_4": "https://images.unsplash.com/photo-1758626042818-b05e9c91b84a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjgyODExNDl8&ixlib=rb-4.1.0&q=80&w=1080",
-    "slide_5": "https://images.unsplash.com/photo-1764601842167-ba701eed47f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjgyODExNTF8&ixlib=rb-4.1.0&q=80&w=1080"
+    "slide_1": "https://images.unsplash.com/photo-1659353888002-214239040492?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjgyODUwMjZ8&ixlib=rb-4.1.0&q=80&w=1080",
+    "slide_2": "https://images.unsplash.com/photo-1659353887019-b142198f2668?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjgyODUwMjl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "slide_3": "https://images.unsplash.com/photo-1655313719612-8248b2c4d1e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjgyODUwMzF8&ixlib=rb-4.1.0&q=80&w=1080",
+    "slide_4": "https://images.unsplash.com/photo-1710922962986-a9e8de6dbb68?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjgyODUwMzR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "slide_5": "https://images.unsplash.com/photo-1638682604737-678cbe345fca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjgyODUwMzd8&ixlib=rb-4.1.0&q=80&w=1080"
   },
   "slide_agent": {
     "slides": [
       {
-        "title": "Introduction to Artificial Intelligence",
+        "title": "Introduction to Healthcare",
         "bullets": [
-          "AI is a branch of computer science aiming to create intelligent machines.",
-          "Involves developing algorithms for problem-solving, learning, and decision-making.",
-          "Machine learning is a subset of AI focusing on learning from data.",
-          "Deep learning uses artificial neural networks for complex problem-solving.",
-          "AI has applications in healthcare, finance, transportation, and more."
+          "Healthcare is the maintenance or improvement of health through prevention, diagnosis, treatment, and recovery of illness and injury.",
+          "Encompasses a wide range of services including medical, dental, mental health, and pharmaceutical care.",
+          "Healthcare systems vary by country, with some being publicly funded, privately funded, or a combination of both."
         ],
-        "image_url": "https://images.unsplash.com/photo-1757310998648-f8aaa5572e8e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjgyODExNDN8&ixlib=rb-4.1.0&q=80&w=1080"
+        "image_url": "https://images.unsplash.com/photo-1659353888002-214239040492?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjgyODUwMjZ8&ixlib=rb-4.1.0&q=80&w=1080"
       },
       {
-        "title": "Understanding Artificial Intelligence",
+        "title": "Factors Influencing Access to Healthcare",
         "bullets": [
-          "AI simulates human intelligence in machines.",
-          "Algorithms are developed for various tasks.",
-          "Machine learning allows machines to learn and improve.",
-          "Deep learning uses neural networks for complex problems.",
-          "AI has a wide range of applications in different industries."
+          "Access to healthcare can be influenced by factors such as socioeconomic status, location, and insurance coverage.",
+          "Disparities in access can lead to unequal health outcomes among different populations.",
+          "Efforts are made to address barriers to access through policy changes and community initiatives."
         ],
-        "image_url": "https://images.unsplash.com/photo-1758626044744-463ce33546a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjgyODExNDR8&ixlib=rb-4.1.0&q=80&w=1080"
+        "image_url": "https://images.unsplash.com/photo-1659353887019-b142198f2668?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjgyODUwMjl8&ixlib=rb-4.1.0&q=80&w=1080"
       },
       {
-        "title": "Importance of Artificial Intelligence",
+        "title": "Importance of Healthcare",
         "bullets": [
-          "AI has the potential to revolutionize industries.",
-          "Enhances efficiency and productivity in various sectors.",
-          "Improves decision-making processes.",
-          "Enables automation of tasks.",
-          "Expected to have a significant impact on society in the future."
+          "The goal of healthcare is to promote overall well-being and quality of life for individuals and populations.",
+          "Preventive care plays a crucial role in maintaining health and reducing the burden of disease.",
+          "Healthcare professionals work collaboratively to provide comprehensive care and support to patients."
         ],
-        "image_url": "https://images.unsplash.com/photo-1766898993564-ab42c311921e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjgyODExNDd8&ixlib=rb-4.1.0&q=80&w=1080"
+        "image_url": "https://images.unsplash.com/photo-1655313719612-8248b2c4d1e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjgyODUwMzF8&ixlib=rb-4.1.0&q=80&w=1080"
       },
       {
-        "title": "Applications of Artificial Intelligence",
+        "title": "Challenges in Healthcare",
         "bullets": [
-          "Healthcare: AI assists in diagnostics and personalized treatment.",
-          "Finance: AI is used for fraud detection and algorithmic trading.",
-          "Transportation: AI powers autonomous vehicles and traffic management.",
-          "Retail: AI enhances customer experience and personalization.",
-          "Education: AI aids in personalized learning and student assessment."
+          "Rising healthcare costs can create financial barriers to access for individuals and families.",
+          "Shortages of healthcare providers in certain specialties or regions can limit access to care.",
+          "Addressing disparities in healthcare quality and outcomes remains a significant challenge for the healthcare system."
         ],
-        "image_url": "https://images.unsplash.com/photo-1758626042818-b05e9c91b84a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjgyODExNDl8&ixlib=rb-4.1.0&q=80&w=1080"
+        "image_url": "https://images.unsplash.com/photo-1710922962986-a9e8de6dbb68?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjgyODUwMzR8&ixlib=rb-4.1.0&q=80&w=1080"
       },
       {
-        "title": "Future of Artificial Intelligence",
+        "title": "Future of Healthcare",
         "bullets": [
-          "AI is continuously evolving and advancing.",
-          "Expected to play a crucial role in shaping the future.",
-          "Ethical considerations and regulations are being developed.",
-          "AI will continue to impact society in various ways.",
-          "Opportunities for innovation and growth in AI-related industries."
+          "Advances in technology and telemedicine are transforming the delivery of healthcare services.",
+          "Emphasis on personalized medicine and precision healthcare is shaping the future of treatment and prevention.",
+          "Collaboration between healthcare providers, policymakers, and community stakeholders is essential for improving healthcare access and outcomes."
         ],
-        "image_url": "https://images.unsplash.com/photo-1764601842167-ba701eed47f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjgyODExNTF8&ixlib=rb-4.1.0&q=80&w=1080"
+        "image_url": "https://images.unsplash.com/photo-1638682604737-678cbe345fca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjgyODUwMzd8&ixlib=rb-4.1.0&q=80&w=1080"
       }
     ]
   },
   "executor_agent": {
-    "output_file": "output\\presentations\\presentation_96011c508f7b4ece9fb5fdc68ba3ab1a.pptx",
+    "output_file": "output\\presentations\\presentation_619bb786ac6745ea988af6888f6682a9.pptx",
     "slides": [
       {
         "slide_id": 1,
-        "title": "Introduction to Artificial Intelligence",
+        "title": "Introduction to Healthcare",
         "bullets": [
-          "AI is a branch of computer science aiming to create intelligent machines.",
-          "Involves developing algorithms for problem-solving, learning, and decision-making.",
-          "Machine learning is a subset of AI focusing on learning from data.",
-          "Deep learning uses artificial neural networks for complex problem-solving.",
-          "AI has applications in healthcare, finance, transportation, and more."
+          "Healthcare is the maintenance or improvement of health through prevention, diagnosis, treatment, and recovery of illness and injury.",
+          "Encompasses a wide range of services including medical, dental, mental health, and pharmaceutical care.",
+          "Healthcare systems vary by country, with some being publicly funded, privately funded, or a combination of both."
         ],
-        "image_path": "output\\images\\a1d2f0a276ce4b51ab518531cf8ed84a\\photo-1757310998648-f8aaa5572e8e.jpg",
-        "image_url": "https://images.unsplash.com/photo-1757310998648-f8aaa5572e8e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjgyODExNDN8&ixlib=rb-4.1.0&q=80&w=1080"
+        "image_path": "output\\images\\93d4de29613d4c4d85a86c480787b1b9\\photo-1659353888002-214239040492.jpg",
+        "image_url": "https://images.unsplash.com/photo-1659353888002-214239040492?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjgyODUwMjZ8&ixlib=rb-4.1.0&q=80&w=1080"
       },
       {
         "slide_id": 2,
-        "title": "Understanding Artificial Intelligence",
+        "title": "Factors Influencing Access to Healthcare",
         "bullets": [
-          "AI simulates human intelligence in machines.",
-          "Algorithms are developed for various tasks.",
-          "Machine learning allows machines to learn and improve.",
-          "Deep learning uses neural networks for complex problems.",
-          "AI has a wide range of applications in different industries."
+          "Access to healthcare can be influenced by factors such as socioeconomic status, location, and insurance coverage.",
+          "Disparities in access can lead to unequal health outcomes among different populations.",
+          "Efforts are made to address barriers to access through policy changes and community initiatives."
         ],
-        "image_path": "output\\images\\a1d2f0a276ce4b51ab518531cf8ed84a\\photo-1758626044744-463ce33546a2.jpg",
-        "image_url": "https://images.unsplash.com/photo-1758626044744-463ce33546a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjgyODExNDR8&ixlib=rb-4.1.0&q=80&w=1080"
+        "image_path": "output\\images\\93d4de29613d4c4d85a86c480787b1b9\\photo-1659353887019-b142198f2668.jpg",
+        "image_url": "https://images.unsplash.com/photo-1659353887019-b142198f2668?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjgyODUwMjl8&ixlib=rb-4.1.0&q=80&w=1080"
       },
       {
         "slide_id": 3,
-        "title": "Importance of Artificial Intelligence",
+        "title": "Importance of Healthcare",
         "bullets": [
-          "AI has the potential to revolutionize industries.",
-          "Enhances efficiency and productivity in various sectors.",
-          "Improves decision-making processes.",
-          "Enables automation of tasks.",
-          "Expected to have a significant impact on society in the future."
+          "The goal of healthcare is to promote overall well-being and quality of life for individuals and populations.",
+          "Preventive care plays a crucial role in maintaining health and reducing the burden of disease.",
+          "Healthcare professionals work collaboratively to provide comprehensive care and support to patients."
         ],
-        "image_path": "output\\images\\a1d2f0a276ce4b51ab518531cf8ed84a\\photo-1766898993564-ab42c311921e.jpg",
-        "image_url": "https://images.unsplash.com/photo-1766898993564-ab42c311921e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjgyODExNDd8&ixlib=rb-4.1.0&q=80&w=1080"
+        "image_path": "output\\images\\93d4de29613d4c4d85a86c480787b1b9\\photo-1655313719612-8248b2c4d1e7.jpg",
+        "image_url": "https://images.unsplash.com/photo-1655313719612-8248b2c4d1e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjgyODUwMzF8&ixlib=rb-4.1.0&q=80&w=1080"
       },
       {
         "slide_id": 4,
-        "title": "Applications of Artificial Intelligence",
+        "title": "Challenges in Healthcare",
         "bullets": [
-          "Healthcare: AI assists in diagnostics and personalized treatment.",
-          "Finance: AI is used for fraud detection and algorithmic trading.",
-          "Transportation: AI powers autonomous vehicles and traffic management.",
-          "Retail: AI enhances customer experience and personalization.",
-          "Education: AI aids in personalized learning and student assessment."
+          "Rising healthcare costs can create financial barriers to access for individuals and families.",
+          "Shortages of healthcare providers in certain specialties or regions can limit access to care.",
+          "Addressing disparities in healthcare quality and outcomes remains a significant challenge for the healthcare system."
         ],
-        "image_path": "output\\images\\a1d2f0a276ce4b51ab518531cf8ed84a\\photo-1758626042818-b05e9c91b84a.jpg",
-        "image_url": "https://images.unsplash.com/photo-1758626042818-b05e9c91b84a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjgyODExNDl8&ixlib=rb-4.1.0&q=80&w=1080"
+        "image_path": "output\\images\\93d4de29613d4c4d85a86c480787b1b9\\photo-1710922962986-a9e8de6dbb68.jpg",
+        "image_url": "https://images.unsplash.com/photo-1710922962986-a9e8de6dbb68?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjgyODUwMzR8&ixlib=rb-4.1.0&q=80&w=1080"
       },
       {
         "slide_id": 5,
-        "title": "Future of Artificial Intelligence",
+        "title": "Future of Healthcare",
         "bullets": [
-          "AI is continuously evolving and advancing.",
-          "Expected to play a crucial role in shaping the future.",
-          "Ethical considerations and regulations are being developed.",
-          "AI will continue to impact society in various ways.",
-          "Opportunities for innovation and growth in AI-related industries."
+          "Advances in technology and telemedicine are transforming the delivery of healthcare services.",
+          "Emphasis on personalized medicine and precision healthcare is shaping the future of treatment and prevention.",
+          "Collaboration between healthcare providers, policymakers, and community stakeholders is essential for improving healthcare access and outcomes."
         ],
-        "image_path": "output\\images\\a1d2f0a276ce4b51ab518531cf8ed84a\\photo-1764601842167-ba701eed47f5.jpg",
-        "image_url": "https://images.unsplash.com/photo-1764601842167-ba701eed47f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjgyODExNTF8&ixlib=rb-4.1.0&q=80&w=1080"
+        "image_path": "output\\images\\93d4de29613d4c4d85a86c480787b1b9\\photo-1638682604737-678cbe345fca.jpg",
+        "image_url": "https://images.unsplash.com/photo-1638682604737-678cbe345fca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjgyODUwMzd8&ixlib=rb-4.1.0&q=80&w=1080"
       }
     ]
   }

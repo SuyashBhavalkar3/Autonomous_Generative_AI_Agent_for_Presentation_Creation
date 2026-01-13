@@ -154,3 +154,49 @@ MIT
 
 ---
 _If you want this README expanded with examples, OpenAPI summary snippets, or a CONTRIBUTING guide, tell me which sections to expand._
+
+## Examples & Results
+
+Below are example outputs produced by this project. The images and sample presentation are included in the repository under the `Results/` folder so you can preview or download them directly.
+
+### Example reference images
+
+These images are representative samples generated and embedded into slides during PPT creation.
+
+![Slide image 1](Results/images/1.png)
+![Slide image 2](Results/images/2.png)
+![Slide image 3](Results/images/3.png)
+![Slide image 4](Results/images/4.png)
+
+You can find additional generated images in the `Results/images/` folder.
+
+### Sample generated PPTs
+
+Download a sample generated presentation to inspect slide layout, embedded images, and notes:
+
+- [Download sample PPTX](Results/ppt/sampleppt.pptx)
+
+### How to reproduce these results locally
+
+1. Start the backend (recommended port `8000`):
+
+```bash
+cd backend
+genAI_env\Scripts\activate   # or activate your Python venv
+pip install -r requirements.txt
+uvicorn main:app --reload --port 8000
+```
+
+2. Start the frontend (recommended port `8081`):
+
+```bash
+cd frontend
+npm install
+npm run dev
+# open http://localhost:8081 in your browser
+```
+
+3. Generate a presentation via the app UI or call the backend `POST /generate_ppt` endpoint. Generated slides, embedded images, and output PPTX files are saved under the `Results/` folder by the test scripts and some local runs.
+
+Notes:
+- If images do not appear in a downloaded `.pptx`, try generating from the backend directly (server-side generation) or inspect `backend/output/` and `Results/` for logs and saved assets.

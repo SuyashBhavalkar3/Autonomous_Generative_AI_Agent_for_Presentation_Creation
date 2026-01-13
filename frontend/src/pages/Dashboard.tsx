@@ -59,8 +59,16 @@ export default function Dashboard() {
     try {
       const API_BASE = (import.meta.env.VITE_API_BASE_URL as string) || 'http://localhost:8000';
 
-      const headers = { 'Content-Type': 'application/json', ...getAuthHeader() };
+      // Use JSON body and an explicit Accept header for PPTX files.
+      // `getAuthHeader()` provides the Authorization header (Bearer token).
+      const headers = {
+        'Content-Type': 'application/json',
+        'Accept': 'application/vnd.openxmlformats-officedocument.presentationml.presentation, */*',
+        ...getAuthHeader(),
+      };
 
+      // Send JSON payload (preferred). Backend supports both JSON and
+      // legacy/form POSTs (see backend/main.py) for compatibility.
       const res = await fetch(`${API_BASE}/generate_ppt`, {
         method: 'POST',
         headers,
