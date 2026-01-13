@@ -23,12 +23,17 @@ app = FastAPI(
 )
 
 # Allow frontend dev server to talk to backend
+# Configure CORS. In production set `ALLOWED_ORIGINS` to a comma-separated
+# list of origins (eg. https://app.example.com). For local development the
+# common Vite origins are included by default.
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
+    expose_headers=["Content-Disposition", "Content-Length"],
 )
 
 # Include routers
@@ -113,8 +118,21 @@ async def generate_ppt(req: GeneratePPTRequest, request: Request):
     # Return the generated PPT file directly as a downloadable response
     from fastapi.responses import FileResponse
 
+    # Explicitly set media type for PPTX and ensure a UTF-8 encoded
+    # `Content-Disposition` header so browsers save the file correctly.
+    from urllib.parse import quote
+
     filename = os.path.basename(output_file)
-    return FileResponse(output_file, filename=filename)
+    quoted = quote(filename)
+    headers = {
+        "Content-Disposition": f"attachment; filename*=UTF-8''{quoted}"
+    }
+
+    return FileResponse(
+        output_file,
+        media_type="application/vnd.openxmlformats-officedocument.presentationml.presentation",
+        headers=headers,
+    )
 
 # Optional: root endpoint
 @app.get("/")

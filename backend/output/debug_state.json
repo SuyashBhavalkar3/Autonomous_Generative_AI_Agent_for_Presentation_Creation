@@ -1,41 +1,141 @@
 {
-  "goal": "Introductio to Artificial Intelligence",
-  "num_slides": 1,
-  "research_agent": "- Artificial Intelligence (AI) is the simulation of human intelligence processes by machines.\n- AI involves the development of algorithms that can perform tasks such as learning, problem-solving, and decision-making.\n- There are different types of AI, including narrow AI (focused on a specific task) and general AI (capable of performing any intellectual task that a human can).\n- AI technologies include machine learning, natural language processing, and computer vision.\n- AI has applications in various industries, such as healthcare, finance, and transportation.\n- Ethical considerations surrounding AI include issues related to bias, privacy, and job displacement.",
-  "content_agent": "1. Introduction to Artificial Intelligence\n- AI is the simulation of human intelligence processes by machines.\n- Development of algorithms for learning, problem-solving, and decision-making.\n- Types of AI: narrow AI (specific task) and general AI (any intellectual task).\n- AI technologies: machine learning, natural language processing, computer vision.\n- Applications in healthcare, finance, transportation, and more.\n\n2. Types of Artificial Intelligence\n- Narrow AI: focused on specific tasks.\n- General AI: capable of any intellectual task a human can do.\n- Examples: Siri, Alexa (narrow AI), theoretical concept (general AI).\n\n3. AI Technologies\n- Machine learning: algorithms learn from data.\n- Natural language processing: understanding and generating human language.\n- Computer vision: interpreting and understanding visual information.\n\n4. Applications of AI\n- Healthcare: diagnosis, personalized treatment.\n- Finance: fraud detection, trading algorithms.\n- Transportation: autonomous vehicles, traffic optimization.\n\n5. Ethical Considerations in AI\n- Bias: algorithms reflect biases in data.\n- Privacy: concerns over data collection and usage.\n- Job displacement: automation leading to job loss.",
+  "goal": "Introduction To Artificial Intelligence",
+  "num_slides": 5,
+  "research_agent": "- Artificial Intelligence (AI) is a branch of computer science that aims to create intelligent machines that can simulate human intelligence.\n- AI involves the development of algorithms that can perform tasks such as problem-solving, learning, and decision-making.\n- Machine learning is a subset of AI that focuses on developing algorithms that allow machines to learn from data and improve their performance over time.\n- Deep learning is a subset of machine learning that uses artificial neural networks to model and solve complex problems.\n- AI has applications in various industries such as healthcare, finance, and transportation, and is expected to have a significant impact on society in the future.",
+  "content_agent": "1. Introduction to Artificial Intelligence\n- AI is a branch of computer science aiming to create intelligent machines.\n- Involves developing algorithms for problem-solving, learning, and decision-making.\n- Machine learning is a subset of AI focusing on learning from data.\n- Deep learning uses artificial neural networks for complex problem-solving.\n- AI has applications in healthcare, finance, transportation, and more.\n\n2. Understanding Artificial Intelligence\n- AI simulates human intelligence in machines.\n- Algorithms are developed for various tasks.\n- Machine learning allows machines to learn and improve.\n- Deep learning uses neural networks for complex problems.\n- AI has a wide range of applications in different industries.\n\n3. Importance of Artificial Intelligence\n- AI has the potential to revolutionize industries.\n- Enhances efficiency and productivity in various sectors.\n- Improves decision-making processes.\n- Enables automation of tasks.\n- Expected to have a significant impact on society in the future.\n\n4. Applications of Artificial Intelligence\n- Healthcare: AI assists in diagnostics and personalized treatment.\n- Finance: AI is used for fraud detection and algorithmic trading.\n- Transportation: AI powers autonomous vehicles and traffic management.\n- Retail: AI enhances customer experience and personalization.\n- Education: AI aids in personalized learning and student assessment.\n\n5. Future of Artificial Intelligence\n- AI is continuously evolving and advancing.\n- Expected to play a crucial role in shaping the future.\n- Ethical considerations and regulations are being developed.\n- AI will continue to impact society in various ways.\n- Opportunities for innovation and growth in AI-related industries.",
   "image_agent": {
-    "slide_1": "https://images.unsplash.com/photo-1752451399416-faef5f9fe572?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc4NzUzMjJ8&ixlib=rb-4.1.0&q=80&w=1080"
+    "slide_1": "https://images.unsplash.com/photo-1757310998648-f8aaa5572e8e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjgyODExNDN8&ixlib=rb-4.1.0&q=80&w=1080",
+    "slide_2": "https://images.unsplash.com/photo-1758626044744-463ce33546a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjgyODExNDR8&ixlib=rb-4.1.0&q=80&w=1080",
+    "slide_3": "https://images.unsplash.com/photo-1766898993564-ab42c311921e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjgyODExNDd8&ixlib=rb-4.1.0&q=80&w=1080",
+    "slide_4": "https://images.unsplash.com/photo-1758626042818-b05e9c91b84a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjgyODExNDl8&ixlib=rb-4.1.0&q=80&w=1080",
+    "slide_5": "https://images.unsplash.com/photo-1764601842167-ba701eed47f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjgyODExNTF8&ixlib=rb-4.1.0&q=80&w=1080"
   },
   "slide_agent": {
     "slides": [
       {
         "title": "Introduction to Artificial Intelligence",
         "bullets": [
-          "AI is the simulation of human intelligence processes by machines.",
-          "Development of algorithms for learning, problem-solving, and decision-making.",
-          "Types of AI: narrow AI (specific task) and general AI (any intellectual task).",
-          "AI technologies: machine learning, natural language processing, computer vision.",
-          "Applications in healthcare, finance, transportation, and more."
+          "AI is a branch of computer science aiming to create intelligent machines.",
+          "Involves developing algorithms for problem-solving, learning, and decision-making.",
+          "Machine learning is a subset of AI focusing on learning from data.",
+          "Deep learning uses artificial neural networks for complex problem-solving.",
+          "AI has applications in healthcare, finance, transportation, and more."
         ],
-        "image_url": "https://images.unsplash.com/photo-1752451399416-faef5f9fe572?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc4NzUzMjJ8&ixlib=rb-4.1.0&q=80&w=1080"
+        "image_url": "https://images.unsplash.com/photo-1757310998648-f8aaa5572e8e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjgyODExNDN8&ixlib=rb-4.1.0&q=80&w=1080"
+      },
+      {
+        "title": "Understanding Artificial Intelligence",
+        "bullets": [
+          "AI simulates human intelligence in machines.",
+          "Algorithms are developed for various tasks.",
+          "Machine learning allows machines to learn and improve.",
+          "Deep learning uses neural networks for complex problems.",
+          "AI has a wide range of applications in different industries."
+        ],
+        "image_url": "https://images.unsplash.com/photo-1758626044744-463ce33546a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjgyODExNDR8&ixlib=rb-4.1.0&q=80&w=1080"
+      },
+      {
+        "title": "Importance of Artificial Intelligence",
+        "bullets": [
+          "AI has the potential to revolutionize industries.",
+          "Enhances efficiency and productivity in various sectors.",
+          "Improves decision-making processes.",
+          "Enables automation of tasks.",
+          "Expected to have a significant impact on society in the future."
+        ],
+        "image_url": "https://images.unsplash.com/photo-1766898993564-ab42c311921e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjgyODExNDd8&ixlib=rb-4.1.0&q=80&w=1080"
+      },
+      {
+        "title": "Applications of Artificial Intelligence",
+        "bullets": [
+          "Healthcare: AI assists in diagnostics and personalized treatment.",
+          "Finance: AI is used for fraud detection and algorithmic trading.",
+          "Transportation: AI powers autonomous vehicles and traffic management.",
+          "Retail: AI enhances customer experience and personalization.",
+          "Education: AI aids in personalized learning and student assessment."
+        ],
+        "image_url": "https://images.unsplash.com/photo-1758626042818-b05e9c91b84a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjgyODExNDl8&ixlib=rb-4.1.0&q=80&w=1080"
+      },
+      {
+        "title": "Future of Artificial Intelligence",
+        "bullets": [
+          "AI is continuously evolving and advancing.",
+          "Expected to play a crucial role in shaping the future.",
+          "Ethical considerations and regulations are being developed.",
+          "AI will continue to impact society in various ways.",
+          "Opportunities for innovation and growth in AI-related industries."
+        ],
+        "image_url": "https://images.unsplash.com/photo-1764601842167-ba701eed47f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjgyODExNTF8&ixlib=rb-4.1.0&q=80&w=1080"
       }
     ]
   },
   "executor_agent": {
-    "output_file": "output\\presentations\\presentation_5734ba22f30c4580bc6b8197c777e7ce.pptx",
+    "output_file": "output\\presentations\\presentation_96011c508f7b4ece9fb5fdc68ba3ab1a.pptx",
     "slides": [
       {
         "slide_id": 1,
         "title": "Introduction to Artificial Intelligence",
         "bullets": [
-          "AI is the simulation of human intelligence processes by machines.",
-          "Development of algorithms for learning, problem-solving, and decision-making.",
-          "Types of AI: narrow AI (specific task) and general AI (any intellectual task).",
-          "AI technologies: machine learning, natural language processing, computer vision.",
-          "Applications in healthcare, finance, transportation, and more."
+          "AI is a branch of computer science aiming to create intelligent machines.",
+          "Involves developing algorithms for problem-solving, learning, and decision-making.",
+          "Machine learning is a subset of AI focusing on learning from data.",
+          "Deep learning uses artificial neural networks for complex problem-solving.",
+          "AI has applications in healthcare, finance, transportation, and more."
         ],
-        "image_path": "output\\images\\2932511c1da547e1ae6c1486d03faf73\\photo-1752451399416-faef5f9fe572.jpg",
-        "image_url": "https://images.unsplash.com/photo-1752451399416-faef5f9fe572?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3Njc4NzUzMjJ8&ixlib=rb-4.1.0&q=80&w=1080"
+        "image_path": "output\\images\\a1d2f0a276ce4b51ab518531cf8ed84a\\photo-1757310998648-f8aaa5572e8e.jpg",
+        "image_url": "https://images.unsplash.com/photo-1757310998648-f8aaa5572e8e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjgyODExNDN8&ixlib=rb-4.1.0&q=80&w=1080"
+      },
+      {
+        "slide_id": 2,
+        "title": "Understanding Artificial Intelligence",
+        "bullets": [
+          "AI simulates human intelligence in machines.",
+          "Algorithms are developed for various tasks.",
+          "Machine learning allows machines to learn and improve.",
+          "Deep learning uses neural networks for complex problems.",
+          "AI has a wide range of applications in different industries."
+        ],
+        "image_path": "output\\images\\a1d2f0a276ce4b51ab518531cf8ed84a\\photo-1758626044744-463ce33546a2.jpg",
+        "image_url": "https://images.unsplash.com/photo-1758626044744-463ce33546a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjgyODExNDR8&ixlib=rb-4.1.0&q=80&w=1080"
+      },
+      {
+        "slide_id": 3,
+        "title": "Importance of Artificial Intelligence",
+        "bullets": [
+          "AI has the potential to revolutionize industries.",
+          "Enhances efficiency and productivity in various sectors.",
+          "Improves decision-making processes.",
+          "Enables automation of tasks.",
+          "Expected to have a significant impact on society in the future."
+        ],
+        "image_path": "output\\images\\a1d2f0a276ce4b51ab518531cf8ed84a\\photo-1766898993564-ab42c311921e.jpg",
+        "image_url": "https://images.unsplash.com/photo-1766898993564-ab42c311921e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjgyODExNDd8&ixlib=rb-4.1.0&q=80&w=1080"
+      },
+      {
+        "slide_id": 4,
+        "title": "Applications of Artificial Intelligence",
+        "bullets": [
+          "Healthcare: AI assists in diagnostics and personalized treatment.",
+          "Finance: AI is used for fraud detection and algorithmic trading.",
+          "Transportation: AI powers autonomous vehicles and traffic management.",
+          "Retail: AI enhances customer experience and personalization.",
+          "Education: AI aids in personalized learning and student assessment."
+        ],
+        "image_path": "output\\images\\a1d2f0a276ce4b51ab518531cf8ed84a\\photo-1758626042818-b05e9c91b84a.jpg",
+        "image_url": "https://images.unsplash.com/photo-1758626042818-b05e9c91b84a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjgyODExNDl8&ixlib=rb-4.1.0&q=80&w=1080"
+      },
+      {
+        "slide_id": 5,
+        "title": "Future of Artificial Intelligence",
+        "bullets": [
+          "AI is continuously evolving and advancing.",
+          "Expected to play a crucial role in shaping the future.",
+          "Ethical considerations and regulations are being developed.",
+          "AI will continue to impact society in various ways.",
+          "Opportunities for innovation and growth in AI-related industries."
+        ],
+        "image_path": "output\\images\\a1d2f0a276ce4b51ab518531cf8ed84a\\photo-1764601842167-ba701eed47f5.jpg",
+        "image_url": "https://images.unsplash.com/photo-1764601842167-ba701eed47f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDgwNzB8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NjgyODExNTF8&ixlib=rb-4.1.0&q=80&w=1080"
       }
     ]
   }

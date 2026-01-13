@@ -72,7 +72,10 @@ export default function Dashboard() {
         throw new Error((errData && (errData.detail || errData.message)) || 'Generate failed');
       }
 
-      const blob = await res.blob();
+      // Read as ArrayBuffer to avoid any accidental charset/encoding issues
+      const arrayBuffer = await res.arrayBuffer();
+      const contentType = res.headers.get('content-type') || 'application/vnd.openxmlformats-officedocument.presentationml.presentation';
+      const blob = new Blob([arrayBuffer], { type: contentType });
       // Try to extract filename from response headers
       let filename = `${topic.trim().replace(/\s+/g, '_')}.pptx`;
       const cd = res.headers.get('content-disposition');
