@@ -18,12 +18,12 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/*
 
 # Install Python dependencies (cached layer)
-COPY backend/requirements.txt /app/requirements.txt
+COPY ./requirements.txt /app/requirements.txt
 RUN python -m pip install --upgrade pip setuptools wheel \
     && pip install --no-cache-dir -r /app/requirements.txt
 
 # Copy ONLY backend source (not whole repo)
-COPY backend /app
+COPY . /app
 
 # Expose app port
 EXPOSE 8080
